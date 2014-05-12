@@ -1,0 +1,16 @@
+
+measure=VMHC
+sign=neg
+#sign=pos
+
+model=Full
+#model=Tot
+
+T=T4 #for Tot: T3 is for ageByTot; for Full: T4 is for ageByDF and T5 is for ageByDB
+
+maskDir=/home/data/Projects/workingMemory/figs/paper_figs/clusterMask;
+threshResults=/home/data/Projects/workingMemory/figs/paper_figs/surfaceMap/thresh_${measure}_${model}_${T}_Z_cmb.nii
+
+for clust in 1 2; do
+3dcalc -a ${maskDir}/cluster_mask_${measure}_${model}_${T}_Z_${sign}.nii.gz -b ${threshResults} -expr "b*equals(a,${clust})" -prefix /home/data/Projects/workingMemory/figs/paper_figs/INTROImask/${measure}_${model}_${T}_${sign}_ROI${clust}.nii.gz
+done

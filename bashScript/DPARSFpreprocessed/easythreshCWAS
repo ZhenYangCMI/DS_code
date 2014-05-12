@@ -1,0 +1,48 @@
+# can not have space before or after the = sign
+
+subNum=46
+for group in CWASchild CWASadoles; do
+for modelFile in FT BT; do
+cd /home2/data/Projects/workingMemory/groupAnalysis/CWAS/${subNum}sub/${group}/${modelFile}.mdmr/
+outputFile=${modelFile}
+rm /home2/data/Projects/workingMemory/groupAnalysis/CWAS/${subNum}sub/${group}/${modelFile}.mdmr/cp_zstats_DS_${modelFile}.nii
+
+3dcalc -a /home2/data/Projects/workingMemory/groupAnalysis/CWAS/${subNum}sub/${group}/${modelFile}.mdmr/zstats_DS_${modelFile}.nii.gz \
+-expr 'a' -prefix "/home2/data/Projects/workingMemory/groupAnalysis/CWAS/${subNum}sub/${group}/${modelFile}.mdmr/cp_zstats_DS_${modelFile}.nii"
+
+cmd1="easythresh \
+/home2/data/Projects/workingMemory/groupAnalysis/CWAS/${subNum}sub/${group}/${modelFile}.mdmr/cp_zstats_DS_${modelFile}.nii \
+/home2/data/Projects/workingMemory/mask/CWAS_newMask/stdMask_46sub_100percent.nii \
+1.64 0.05 \
+/home2/data/Projects/workingMemory/mask/CWAS_newMask/stdMask_46sub_100percent.nii \
+${outputFile}"
+
+echo $cmd1
+eval $cmd1
+
+done
+done
+
+group=CWAS46sub
+subNum=46
+for modelFile in FT BT; do
+for effect in DS_${modelFile}_demean Age_category AgeByDS_${modelFile}_demean; do
+cd /home2/data/Projects/workingMemory/groupAnalysis/CWAS/${subNum}sub/${group}/${modelFile}.mdmr/
+
+outputFile=${effect}
+
+3dcalc -a /home2/data/Projects/workingMemory/groupAnalysis/CWAS/${subNum}sub/${group}/${modelFile}.mdmr/zstats_${effect}.nii.gz \
+-expr 'a' -prefix "/home2/data/Projects/workingMemory/groupAnalysis/CWAS/${subNum}sub/${group}/${modelFile}.mdmr/cp_zstats_${effect}.nii"
+
+cmd1="easythresh \
+/home2/data/Projects/workingMemory/groupAnalysis/CWAS/${subNum}sub/${group}/${modelFile}.mdmr/cp_zstats_${effect}.nii \
+/home2/data/Projects/workingMemory/mask/CWAS_newMask/stdMask_46sub_100percent.nii \
+1.64 0.05 \
+/home2/data/Projects/workingMemory/mask/CWAS_newMask/stdMask_46sub_100percent.nii \
+${outputFile}"
+
+echo $cmd1
+eval $cmd1
+
+done
+done

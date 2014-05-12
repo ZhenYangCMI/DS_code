@@ -1,0 +1,10 @@
+connectir_subdist.R \
+--infuncs1=<text file with the list of functional paths [resampled/smoothed/masked]> \
+--ztransform \
+--brainmask1=<combined group mask (across all subjects) masked by grey matter 25%> \
+--bg=standard_brain_image (underlay) \
+--memlimit=20-40? \
+--forks=1 \
+--threads=12 \
+/path/to/subjectdist/output_directory
+

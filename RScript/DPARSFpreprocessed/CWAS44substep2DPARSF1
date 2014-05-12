@@ -1,0 +1,11 @@
+connectir_mdmr.R \
+-i "/home2/data/Projects/workingMemory/data/DPARSF_analysis/CWAS/CWAS44sub" \
+--formula 'DS_FT_demean + meanFDJenk_demean + hand_demean' \
+--model "/home2/data/Projects/workingMemory/data/forRegressionModel44sub.csv" \
+--permutations 15000 \
+--factors2perm 'DS_FT_demean' \
+--threads 8 \
+--memlimit 12 \
+--save-perms \
+FT.mdmr
+

@@ -1,0 +1,11 @@
+connectir_mdmr.R \
+-i "/home2/data/Projects/workingMemory/groupAnalysis/CWAS_compCor/CWAS68sub" \
+--formula 'age_demean + DS_BT_demean + ageByBTdemean + meanFDJenk_demean + WASI_Full4IQ_demean + hand_demean' \
+--model "/home2/data/Projects/workingMemory/data/forRegressionModel68sub.csv" \
+--permutations 15000 \
+--factors2perm 'age_demean,DS_BT_demean,ageByBTdemean' \
+--threads 8 \
+--memlimit 12 \
+--save-perms \
+BTSepLinearFWHM8.mdmr
+

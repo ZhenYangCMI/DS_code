@@ -1,0 +1,888 @@
+-
+    subject_id: 'sub3211'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3211/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3211/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4711'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4711/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4711/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4727'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4727/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4727/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4866'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4866/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4866/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4705'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4705/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4705/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4388'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4388/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4388/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4364'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4364/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4364/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4401'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4401/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4401/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4449'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4449/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4449/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3216'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3216/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3216/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4522'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4522/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4522/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4489'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4489/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4489/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4450'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4450/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4450/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3193'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3193/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3193/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3134'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3134/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3134/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3148'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3148/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3148/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3195'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3195/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3195/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3150'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3150/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3150/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3172'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3172/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3172/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3147'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3147/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3147/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3119'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3119/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3119/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3115'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3115/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3115/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3125'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3125/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3125/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3152'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3152/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3152/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3158'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3158/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3158/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3156'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3156/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3156/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3157'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3157/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3157/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3200'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3200/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3200/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3201'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3201/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3201/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3217'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3217/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3217/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3220'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3220/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3220/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3222'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3222/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3222/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3236'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3236/anat_2_old/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3236/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3255'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3255/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3255/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3269'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3269/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3269/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4348'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4348/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4348/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3304'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3304/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3304/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3305'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3305/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3305/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3306'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3306/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3306/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3312'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3312/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3312/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3325'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3325/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3325/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub3326'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3326/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3326/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4345'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4345/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4345/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4347'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4347/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4347/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4349'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4349/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4349/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4351'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4351/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4351/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4359'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4359/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4359/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4380'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4380/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4380/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4379'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4379/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4379/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4406'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4406/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4406/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4412'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4412/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4412/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4486'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4486/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4486/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4415'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4415/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4415/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4417'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4417/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4417/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4804'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4804/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4804/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4514'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4514/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4514/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4826'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4826/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4826/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4534'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4534/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4534/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4523'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4523/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4523/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4543'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4543/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4543/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4642'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4642/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4642/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4545'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4545/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4545/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub8537'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8537/anat_2_old/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8537/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4591'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4591/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4591/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4708'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4708/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4708/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4664'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4664/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4664/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4683'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4683/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4683/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub8552'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8552/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8552/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4717'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4717/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4717/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub8581'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8581/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8581/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub8559'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8559/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8559/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub8539'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8539/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8539/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub8578'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8578/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8578/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub8551'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8551/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub8551/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'

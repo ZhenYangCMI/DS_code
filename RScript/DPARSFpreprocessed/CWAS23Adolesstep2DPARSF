@@ -1,0 +1,11 @@
+connectir_mdmr.R \
+-i "/home2/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/CWASadoles" \
+--formula 'DS_FT + DS_BT+mean.FD_Jenkinson + WASI_Full4IQ + Handedness.Score' \
+--model "/home2/data/Projects/workingMemory/data/CWAS23adoles.csv" \
+--permutations 15000 \
+--factors2perm 'DS_FT, DS_BT' \
+--threads 8 \
+--memlimit 12 \
+--save-perms \
+FTandBTogether.mdmr
+

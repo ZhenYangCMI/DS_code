@@ -1,0 +1,72 @@
+# can not have space before or after the = sign
+#remember to modify the effect list depending on the model
+
+for covType in meanRegress_noGSR GSR compCor gCor noGSR; do
+#for covType in GSR compCor gCor noGSR; do
+
+for metric in ReHo fALFF VMHC skewness DualRegression0 DualRegression1 DualRegression2 DualRegression3 DualRegression4 DualRegression5; do
+#for metric in DegreeCentrality; do
+
+if [[ ${metric} = "VMHC" ]]; then
+	if [[ ${covType} = "gCor" ]] || [[ ${covType} = "meanRegress_noGSR" ]]; then
+		mask=/home/data/Projects/workingMemory/mask/CPACpreprocessing/noGSR/autoMask_68sub_90percent_2mm.nii
+	elif [[ ${covType} = "meanRegress_compCor" ]]; then
+		mask=/home/data/Projects/workingMemory/mask/CPACpreprocessing/compCor/autoMask_68sub_90percent_2mm.nii
+	else
+		mask=/home/data/Projects/workingMemory/mask/CPACpreprocessing/${covType}/autoMask_68sub_90percent_2mm.nii
+	fi
+
+else
+	if [[ ${covType} = "gCor" ]] || [[ ${covType} = "meanRegress_noGSR" ]]; then
+		mask=/home/data/Projects/workingMemory/mask/CPACpreprocessing/noGSR/autoMask_68sub_90percent.nii
+	elif [[ ${covType} = "meanRegress_compCor" ]]; then
+		mask=/home/data/Projects/workingMemory/mask/CPACpreprocessing/compCor/autoMask_68sub_90percent.nii	
+	else
+		mask=/home/data/Projects/workingMemory/mask/CPACpreprocessing/${covType}/autoMask_68sub_90percent.nii
+	fi
+fi
+
+mkdir -p /home/data/Projects/workingMemory/results/CPAC_analysis_new/groupAnalysis/${covType}/${metric}/easythresh
+
+	for model in Full DF DB Tot; do
+
+		if [[ ${model} = "Full" ]]; then
+			effectList='T1 T2 T3 T4 T5'
+		else
+			effectList='T1 T2 T3'
+		fi
+
+		echo ${effectList}
+		for effect in ${effectList}; do
+			3dcalc -a /home/data/Projects/workingMemory/results/CPAC_analysis_new/groupAnalysis/${covType}/${metric}/${metric}_${model}_${effect}_Z.nii \
+			-expr 'a' -prefix "/home/data/Projects/workingMemory/results/CPAC_analysis_new/groupAnalysis/${covType}/${metric}/easythresh/${metric}_${model}_${effect}_Z_pos.nii"
+
+			3dcalc -a /home/data/Projects/workingMemory/results/CPAC_analysis_new/groupAnalysis/${covType}/${metric}/${metric}_${model}_${effect}_Z.nii \
+			-expr '(-1)*a' -prefix "/home/data/Projects/workingMemory/results/CPAC_analysis_new/groupAnalysis/${covType}/${metric}/easythresh/${metric}_${model}_${effect}_Z_neg.nii"
+
+			cd /home/data/Projects/workingMemory/results/CPAC_analysis_new/groupAnalysis/${covType}/${metric}/easythresh
+
+			for sign in pos neg; do
+			outputFile=${metric}_${model}_${effect}_Z_${sign}
+
+			cmd1="easythresh \
+			${metric}_${model}_${effect}_Z_${sign}.nii \
+			${mask} \
+			2.33 0.05 \
+			${mask} \
+			${outputFile}"
+
+			echo $cmd1
+			eval $cmd1
+		
+			done
+
+		3dcalc -a thresh_${metric}_${model}_${effect}_Z_pos.nii.gz -b thresh_${metric}_${model}_${effect}_Z_neg.nii.gz -expr 'a+b*(-1)' -prefix "thresh_${metric}_${model}_${effect}_Z_cmb.nii"
+
+		done
+	done
+done
+
+done
+	
+

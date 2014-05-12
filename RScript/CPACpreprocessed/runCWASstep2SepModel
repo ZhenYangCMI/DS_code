@@ -1,0 +1,15 @@
+
+for covType in compCor GSR noGSR; do
+bash CWASstep2Full ${covType}
+for DSscore in FT BT TotT; do
+bash CWASstep2SepModel ${covType} ${DSscore}
+done
+done
+
+# This is for gCor
+for covType in noGSR; do
+bash CWASstep2FullgCor ${covType}
+for DSscore in FT BT TotT; do
+bash CWASstep2SepModelgCor ${covType} ${DSscore}
+done
+done

@@ -1,0 +1,63 @@
+# remember the mask should be in the standard space
+## full/path/to/site
+analysisdirectory=/home2/data/Projects/workingMemory/data/gRAICAR_analysis/wave1
+
+## full/path/to/site/subject_list
+subject_list=/home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/scripts/subjectList_Num_1_22sub.txt
+
+compDir=/home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/gRAICAR_PR_autoDim_ANTs/compMaps/unthreshed
+
+% concate the ICA components
+#cd ${compDir}
+#3dTcat -prefix commonAC.nii unthreshedComp001.nii unthreshedComp002.nii unthreshedComp003.nii unthreshedComp004.nii unthreshedComp005.nii unthreshedComp007.nii
+
+## name of rest directory
+func_dir_name=FunImg
+
+## name of anat directory
+anat_dir_name=T1Img
+
+standard_template=/home2/data/Projects/workingMemory/mask/MNI152_T1_2mm_brain.nii.gz
+standard_template_3mm=/home2/data/Projects/workingMemory/mask/MNI152_T1_3mm_brain.nii.gz
+
+##############################################################
+## preprocess 4D time series
+##############################################################
+#subject=9006154
+for subject in `cat $subject_list`; do
+
+#subject=8818
+echo --------------------------
+echo running subject ${subject}
+echo --------------------------
+
+## directory setup
+dir=${analysisdirectory}
+func_dir=${dir}/${subject}/${func_dir_name}
+func_reg_dir=${func_dir}/reg
+anat_dir=${dir}/${subject}/${anat_dir_name}
+anat_reg_dir=${anat_dir}/reg
+ICA_dir=${func_dir}/ICA
+
+% norm the preprocessed time series
+cd ${dir}/dualRegressPreprocess/${subject}/
+
+3drefit -deoblique Filtered_4DVolume.nii 
+3dresample -orient rpi -prefix Filtered_4DVolume_rpi.nii -inset Filtered_4DVolume.nii 
+ 
+3dcalc -a Filtered_4DVolume_rpi.nii -b /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/${subject}/FunImg/rest_mask.nii.gz -expr 'a*b' -prefix Filtered_4DVolume_rpi_masked.nii 
+
+# 3dmerge -1blur_fwhm 6.0 -doall -prefix Filtered_4DVolume_rpi_masked.ni_blur Filtered_4DVolume_rpi_masked.nii 
+
+WarpTimeSeriesImageMultiTransform 4 Filtered_4DVolume_rpi_masked.nii Filtered_4DVolume_rpi_masked_mni152_ANTs.nii.gz -R ${standard_template_3mm} ${anat_reg_dir}/ants_Warp.nii.gz ${anat_reg_dir}/ants_Affine.txt ${func_reg_dir}/example_func2highersBBR_affine.txt
+
+done
+
+#cd ${analysisdirectory}/dualRegressPreprocess
+#dual_regression commonAC.nii 1 -1 0 dualRegress 'cat /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/dualRegressPreprocess/*/Filtered_4DVolume_rpi_masked_mni152_ANTs.nii.gz.nii.gz
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+/home2/data/Projects/workingMemory/code/CPACAnalysis/configs_3_23_13/GreyMask_02_3mm.nii.gz

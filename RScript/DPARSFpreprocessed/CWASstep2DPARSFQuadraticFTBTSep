@@ -1,0 +1,11 @@
+connectir_mdmr.R \
+-i "/home2/data/Projects/workingMemory/groupAnalysis/CWAS/68sub/CWAS68sub" \
+--formula 'age_demean + age2_demean + DS_FT_demean + ageByFTdemean + age2ByFTdemean + meanFDJenk_demean + WASI_Full4IQ_demean + hand_demean' \
+--model "/home2/data/Projects/workingMemory/data/forRegressionModel68sub.csv" \
+--permutations 15000 \
+--factors2perm 'age_demean,age2_demean,DS_FT_demean,ageByFTdemean,age2ByFTdemean' \
+--threads 8 \
+--memlimit 12 \
+--save-perms \
+FTSepQuadraticFWHM8.mdmr
+

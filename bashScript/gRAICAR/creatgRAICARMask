@@ -1,0 +1,80 @@
+# remember the mask should be in the standard space
+## full/path/to/site
+analysisdirectory=/home2/data/Projects/workingMemory/data/gRAICAR_analysis/wave1
+
+## full/path/to/site/subject_list
+subject_list=/home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/scripts/subjectList_Num_45_68sub.txt
+
+## name of resting-state scan (no extension)
+rest=rest
+
+## name of rest directory
+func_dir_name=FunImg
+
+## name of anat directory
+anat_dir_name=T1Img
+
+standard_template=/home2/data/Projects/workingMemory/mask/MNI152_T1_2mm_brain.nii.gz
+standard_template_3mm=/home2/data/Projects/workingMemory/mask/MNI152_T1_3mm_brain.nii.gz
+##############################################################
+## compute the transformation matrix and norm the ICA componets
+##############################################################
+#subject=9006154
+for subject in `cat $subject_list`; do
+
+#for realization in `seq 2 30`
+#do
+## directory setup
+dir=${analysisdirectory}
+func_dir=${dir}/${subject}/${func_dir_name}
+func_reg_dir=${func_dir}/reg
+anat_dir=${dir}/${subject}/${anat_dir_name}
+anat_reg_dir=${anat_dir}/reg
+ICA_dir=${func_dir}/ICA
+
+echo --------------------------
+echo running subject ${subject}
+echo --------------------------
+
+cd ${ICA_dir}
+WarpTimeSeriesImageMultiTransform 4 rest_gms_filt.nii.gz rest_gms_filt_mni152_ANTs.nii.gz -R ${standard_template_3mm} ${anat_reg_dir}/ants_Warp.nii.gz ${anat_reg_dir}/ants_Affine.txt ${func_reg_dir}/example_func2highersBBR_affine.txt
+
+done
+
+
+# for the wave 1 sample
+3dMean -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/mask_68sub.nii  /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/sub*/rest_1_FunImgARCW_gms/gms_AllVolume_mask.nii
+
+3dresample -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/RPI_mask_68sub.nii -orient RPI -inset /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/mask_68sub.nii
+
+3dcalc -a /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/RPI_mask_68sub.nii  -expr 'step(a-0.899)' -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/RPI_mask_68sub_90prc.nii 
+
+
+# for Rockland sample
+subList="/home/data/Projects/workingMemory/data/gRAICAR_analysis/Rockland/reorder_subjects_gRAICAR126.list" 
+for subject in `cat $subList`; do
+echo ${subject}
+3dAutomask -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/Rockland/${subject}/FunImg/ICA_gms/melodic_autoDim/melodic_IC_mni152_3mm_ANTs_mask.nii.gz -dilate 1 /home/data/Projects/workingMemory/data/gRAICAR_analysis/Rockland/${subject}/FunImg/ICA_gms/melodic_autoDim/melodic_IC_mni152_3mm_ANTs.nii.gz 
+done
+
+3dMean -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/Rockland/mask/melodic_IC_mni152_3mm_ANTs_mask_126sub.nii.gz \
+/home/data/Projects/workingMemory/data/gRAICAR_analysis/Rockland/*/FunImg/ICA_gms/melodic_autoDim/melodic_IC_mni152_3mm_ANTs_mask.nii.gz
+
+3dcalc -a /home/data/Projects/workingMemory/data/gRAICAR_analysis/Rockland/mask/melodic_IC_mni152_3mm_ANTs_mask_126sub.nii.gz -expr 'step(a-0.899)' -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/Rockland/mask/melodic_IC_mni152_3mm_ANTs_mask_126sub_90prct.nii.gz
+
+
+# for wave1
+subList="/home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/scripts/subjectList_Num_68sub.txt" 
+for subject in `cat $subList`; do
+echo ${subject}
+3dAutomask -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/${subject}/FunImg/ICA/melodic_autoDim/melodic_IC_mni152_3mm_ANTs_mask.nii.gz -dilate 1 /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/${subject}/FunImg/ICA/melodic_autoDim/melodic_IC_mni152_3mm_ANTs.nii.gz
+done
+
+3dMean -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/melodic_IC_mni152_3mm_ANTs_mask_wave1_68sub.nii.gz  /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/*/FunImg/ICA/melodic_autoDim/melodic_IC_mni152_3mm_ANTs_mask.nii.gz
+
+3dcalc -a /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/melodic_IC_mni152_3mm_ANTs_mask_wave1_68sub.nii.gz  -expr 'step(a-0.899)' -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/melodic_IC_mni152_3mm_ANTs_mask_wave1_68sub_90prct.nii.gz
+
+
+3dMean -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/ants_deformed_68sub.nii.gz  /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/*/T1Img/reg/ants_deformed.nii.gz
+
+3dcalc -a /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/ants_deformed_68sub.nii.gz  -expr 'step(a-0.899)' -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/ants_deformed_68sub_90prct.nii.gz

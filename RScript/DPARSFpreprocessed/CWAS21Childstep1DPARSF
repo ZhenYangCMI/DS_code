@@ -1,0 +1,10 @@
+connectir_subdist.R \
+--infuncs1='/home2/data/Projects/workingMemory/code/RScript/child_CWASdataPath.txt' \
+--ztransform \
+--brainmask1='/home2/data/Projects/workingMemory/mask/CWAS_meanFunMask1.0_46sub_4mm_MNIGrey0.25.nii' \
+--bg=/home2/data/Projects/workingMemory/mask/MNI152_T1_GREY_4mm_25pc_mask.nii.gz \
+--memlimit=30 \
+--forks=1 \
+--threads=12 \
+/home2/data/Projects/workingMemory/data/DPARSF_analysis/CWAS/CWASchild
+

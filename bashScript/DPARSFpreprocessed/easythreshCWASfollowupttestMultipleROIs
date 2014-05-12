@@ -1,0 +1,46 @@
+# can not have space before or after the = sign
+
+for ROImaskGroup in child_BT; do
+
+mkdir -p /home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/ttestPerformGroup/HighMinusLow/easythresh
+
+#rm "/home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/regressDSAndFullBrainFC/${ROImaskGroup}/easythresh/${ROImaskGroup}Mask_${group}Subgroup_T1_Z.nii"
+
+if [[ ${ROImaskGroup} = "child_BT" ]]; then
+seedList="1 2"
+groupList="child_BT adoles_BT"
+else
+seedList="1 2 3 4"
+groupList="child_FT adoles_FT"
+fi
+
+for group in ${groupList}; do
+
+for seed in ${seedList}; do
+
+3dcalc -a /home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/ttestPerformGroup/HighMinusLow/${ROImaskGroup}MaskROI${seed}${group}SubgroupHighMinusLow_Z.nii \
+-expr 'a' -prefix "/home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/ttestPerformGroup/HighMinusLow/easythresh/${ROImaskGroup}MaskROI${seed}${group}SubgroupHighMinusLow_Z_pos.nii"
+
+3dcalc -a /home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/ttestPerformGroup/HighMinusLow/${ROImaskGroup}MaskROI${seed}${group}SubgroupHighMinusLow_Z.nii \
+-expr '(-1)*a' -prefix "/home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/ttestPerformGroup/HighMinusLow/easythresh/${ROImaskGroup}MaskROI${seed}${group}SubgroupHighMinusLow_Z_neg.nii"
+
+cd /home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/ttestPerformGroup/HighMinusLow/easythresh/
+for sign in pos neg; do
+outputFile=${ROImaskGroup}MaskROI${seed}${group}SubgroupHighMinusLow_Z_${sign}
+
+cmd1="easythresh \
+${ROImaskGroup}MaskROI${seed}${group}SubgroupHighMinusLow_Z_${sign}.nii \
+/home2/data/Projects/workingMemory/mask/CWAS_newMask/stdMask_46sub_100percent.nii \
+2.33 0.05 \
+/home2/data/Projects/workingMemory/mask/CWAS_newMask/stdMask_46sub_100percent.nii \
+${outputFile}"
+
+echo $cmd1
+eval $cmd1
+done
+
+3dcalc -a thresh_${ROImaskGroup}MaskROI${seed}${group}SubgroupHighMinusLow_Z_pos.nii.gz -b thresh_${ROImaskGroup}MaskROI${seed}${group}SubgroupHighMinusLow_Z_neg.nii.gz -expr 'a+b*(-1)' -prefix "thresh_${ROImaskGroup}MaskROI${seed}${group}SubgroupHighMinusLow_Z_cmb.nii"
+done
+done
+done
+

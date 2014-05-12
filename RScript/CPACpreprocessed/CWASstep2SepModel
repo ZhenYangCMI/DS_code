@@ -1,0 +1,14 @@
+covType=$1
+DSscore=$2
+connectir_mdmr.R \
+-i "/home/data/Projects/workingMemory/results/CPAC_12_16_13/groupAnalysis/${covType}/CWAS3mm" \
+--formula "age_demean + DS_${DSscore}_demean + ageBy${DSscore}demean + meanFDJenk_demean + WASI_Full4IQ_demean + hand_demean" \
+--model "/home2/data/Projects/workingMemory/data/regressionModelCPACNewAnalysisAgeDemeanByDSDemean.csv" \
+--permutations 15000 \
+--factors2perm "age_demean,DS_${DSscore}_demean,ageBy${DSscore}demean" \
+--threads 8 \
+--memlimit 12 \
+--save-perms \
+${DSscore}SepFWHM8.mdmr
+
+

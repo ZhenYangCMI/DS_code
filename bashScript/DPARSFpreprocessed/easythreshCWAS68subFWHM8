@@ -1,0 +1,91 @@
+# can not have space before or after the = sign
+# FT and BT in two separate model
+# model can be Linear or Quadratic
+
+covType=compCor
+subNum=68
+group=CWAS68sub
+# for model in Linear Quadratic; do
+for model in Linear; do
+for task in FT BT; do
+
+if [[ ${model} = "Linear" ]]; then
+effectList="age_demean DS_${task}_demean ageBy${task}demean"
+else
+effectList="age_demean age2_demean DS_${task}_demean ageBy${task}demean age2By${task}demean"
+fi
+
+echo ${effectList}
+
+for effect in ${effectList}; do
+
+cd /home2/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/${group}/${task}Sep${model}FWHM8.mdmr/
+
+outputFile=${effect}
+
+3dcalc -a /home2/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/${group}/${task}Sep${model}FWHM8.mdmr/zstats_${effect}.nii.gz \
+-expr 'a' -prefix "/home2/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/${group}/${task}Sep${model}FWHM8.mdmr/cp_zstats_${effect}.nii"
+
+cmd1="easythresh \
+/home2/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/${group}/${task}Sep${model}FWHM8.mdmr/cp_zstats_${effect}.nii \
+/home2/data/Projects/workingMemory/mask/CWAS_68sub_${covType}/stdMask_68sub_100percent.nii \
+1.64 0.05 \
+/home2/data/Projects/workingMemory/mask/CWAS_68sub_${covType}/stdMask_68sub_100percent.nii \
+${outputFile}"
+
+echo $cmd1
+eval $cmd1
+
+done
+done
+done
+
+# Full model with FT BT in the same model: linear
+group=CWAS68sub
+subNum=68
+for modelFile in fullModelLinearFWHM8; do
+for effect in age_demean DS_FT_demean DS_BT_demean ageByFTdemean ageByBTdemean; do
+cd /home2/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/${group}/${modelFile}.mdmr/
+
+outputFile=${effect}
+
+3dcalc -a /home2/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/${group}/${modelFile}.mdmr/zstats_${effect}.nii.gz \
+-expr 'a' -prefix "/home2/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/${group}/${modelFile}.mdmr/cp_zstats_${effect}.nii"
+
+cmd1="easythresh \
+/home2/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/${group}/${modelFile}.mdmr/cp_zstats_${effect}.nii \
+/home2/data/Projects/workingMemory/mask/CWAS_68sub_${covType}/stdMask_68sub_100percent.nii \
+1.64 0.05 \
+/home2/data/Projects/workingMemory/mask/CWAS_68sub_${covType}/stdMask_68sub_100percent.nii \
+${outputFile}"
+
+echo $cmd1
+eval $cmd1
+
+done
+done
+
+# Full model with FT BT in the same model: quadratic
+group=CWAS68sub
+subNum=68
+for modelFile in fullModelQuadraticFWHM8; do
+for effect in age_demean age2_demean DS_FT_demean DS_BT_demean ageByFTdemean ageByBTdemean age2ByFTdemean age2ByBTdemean; do
+cd /home2/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/${subNum}sub/${group}/${modelFile}.mdmr/
+
+outputFile=${effect}
+
+3dcalc -a /home2/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/${subNum}sub/${group}/${modelFile}.mdmr/zstats_${effect}.nii.gz \
+-expr 'a' -prefix "/home2/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/${subNum}sub/${group}/${modelFile}.mdmr/cp_zstats_${effect}.nii"
+
+cmd1="easythresh \
+/home2/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/${subNum}sub/${group}/${modelFile}.mdmr/cp_zstats_${effect}.nii \
+/home2/data/Projects/workingMemory/mask/CWAS_newMask_68sub_${covType}/stdMask_68sub_100percent.nii \
+1.64 0.05 \
+/home2/data/Projects/workingMemory/mask/CWAS_newMask_68sub_${covType}/stdMask_68sub_100percent.nii \
+${outputFile}"
+
+echo $cmd1
+eval $cmd1
+
+done
+done

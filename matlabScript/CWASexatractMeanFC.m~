@@ -1,0 +1,23 @@
+
+% This script will plot individual surface map
+
+clear
+clc
+close all
+%%%Get the Surface maps
+covType='GSR'
+ROImaskGroup='fullModel'; 
+groupList={'adoles', 'child'}
+
+    
+    imgInputDir = ['/home2/data/Projects/workingMemory/groupAnalysis/CWAS_', covType, '/68sub/followup/', ROImaskGroup, '/CWASDSregressFC/easythresh/'];
+    surfaceMapOutputDir = imgInputDir;
+    
+    3dmaskave -mask 
+    
+            InputName=[imgInputDir, 'thresh_', group, '_ROI', num2str(i), '_T1_Z_cmb.nii'];
+            OutputName = [surfaceMapOutputDir,'thresh_', group, '_ROI', num2str(i), '_T1_Z_cmb', SurfaceMapSuffix];
+            
+
+
+

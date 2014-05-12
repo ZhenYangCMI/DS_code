@@ -1,0 +1,25 @@
+# create mask for other metrics. This mask will be used for group analysis and easythresh
+covType='noGSR'
+
+for i in `ls /home2/data/Projects/workingMemory/data/DPARSF_analysis/${covType}/FunImgARCWF68sub_fwhm8`; do 
+
+3dresample -dxyz 3.0 3.0 3.0 -prefix /home2/data/Projects/workingMemory/data/DPARSF_analysis/${covType}/FunImgARCWF/${i}/Filtered_4DVolume_3mm.nii -inset /home2/data/Projects/workingMemory/data/DPARSF_analysis/${covType}/FunImgARCWF/$i/Filtered_4DVolume.nii
+
+3dcalc -a /home/data/Projects/workingMemory/data/DPARSF_analysis/${covType}/FunImgARCWF/${i}/Filtered_4DVolume_3mm.nii -b /home2/data/Projects/workingMemory/mask/MNI152_T1_3mm_brain_mask_dil.nii.gz -expr 'a*b' -prefix /home/data/Projects/workingMemory/data/DPARSF_analysis/${covType}/FunImgARCWF/${i}/Filtered_4DVolume_3mm_masked.nii
+
+cmd="fslmaths /home/data/Projects/workingMemory/data/DPARSF_analysis/${covType}/FunImgARCWF/${i}/Filtered_4DVolume_3mm_masked.nii -Tstd -bin /home/data/Projects/workingMemory/mask/otherMetrics_mask_68sub_${covType}/stdMask_fullBrain_${i}"
+
+echo $cmd
+eval $cmd
+
+done
+
+
+3dMean -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/rarest_3mm_RPI_mask_68sub.nii /home/data/Projects/workingMemory/data/DPARSF_analysis/FunImgAR/*/rarest_3mm_RPI_mask.nii
+
+3dcalc -a /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/rarest_3mm_RPI_mask_68sub.nii -expr 'step(a-0.8999)' -prefix /home/data/Projects/workingMemory/data/gRAICAR_analysis/wave1/mask/rarest_3mm_RPI_mask_68sub_90pct.nii
+
+
+
+3dcalc -a /home/data/Projects/workingMemory/mask/otherMetrics_mask_68sub/stdMask_fullBrain_68sub.nii -b /home2/data/Projects/workingMemory/mask/MNI152_T1_GREY_3mm_25pc_mask.nii.gz -expr 'step(a-0.8999)*b' -prefix /home/data/Projects/workingMemory/mask/otherMetrics_mask_68sub/stdMask_GreyMatter_68sub_90percent.nii
+

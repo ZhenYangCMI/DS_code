@@ -1,0 +1,35 @@
+
+covType=GSR
+modelType=fullModel 
+group=child
+maskFile=/home/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/68sub/followup/${modelType}/CWASDSregressFC/easythresh/cluster_mask_child_ROI1_T1_Z_neg.nii.gz
+resultDir=/home/data/Projects/workingMemory/groupAnalysis/CWAS_${covType}/68sub/followup/${modelType}/avgFC
+
+clustList="1 2"
+
+
+for j in $clustList; do
+3dcalc -a $maskFile -expr "equals(a,${j})" -prefix $resultDir/maskROI${j}.nii
+
+	for i in `ls /home2/data/Projects/workingMemory/data/DPARSF_analysis/${covType}/FunImgARCWF68sub_fwhm8`; do 
+
+	echo "---------------";
+	echo "Working on sub $i...";
+
+		if [[ ${j} = 1 ]]; then
+		echo ${i} >> $resultDir/tmp.sub;
+		fi
+	inputFile=/home/data/Projects/workingMemory/groupAnalysis/CWAS_GSR/68sub/followup/fullModel/ROI1FC_ROIageByFT${i}.nii
+		
+    	3dmaskave -quiet -mask $resultDir/maskROI${j}.nii $inputFile >> $resultDir/tmp.clust${j};
+	# 3dROIstats -mask <mask> /path/to/z-map/$i/fstat_map.nii.gz >> file.csv;
+	done
+done
+
+cd $resultDir
+paste --delimiter=, tmp.sub tmp.clust* > ${model}${group}ROI1cluster_avg_FC.txt
+
+rm -rf ${resultDir}/tmp.*
+rm -rf $resultDir/maskROI*.nii
+
+

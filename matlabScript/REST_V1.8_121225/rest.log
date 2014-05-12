@@ -1,0 +1,19 @@
+Welcome: milham, 20130829_1033 
+REST Version: 1.8, Release: 20121225
+Citation Information:
+Xiao-Wei Song, Zhang-Ye Dong, Xiang-Yu Long, Su-Fang Li, Xi-Nian Zuo, Chao-Zhe Zhu, Yong He, Chao-Gan Yan, Yu-Feng Zang. (2011) REST: A Toolkit for Resting-State Functional Magnetic Resonance Imaging Data Processing. PLoS ONE 6(9): e25031. doi:10.1371/journal.pone.0025031
+Now REST is Running on 0 workers.
+{Warning: Texture data too large for graphics device. Fitting to max size available.} 
+{> In <a href="matlab: opentoline('/usr/local/MATLAB/R2012a/toolbox/matlab/graphics/openfig.m',135,1)">openfig at 135</a>
+  In <a href="matlab: opentoline('/usr/local/MATLAB/R2012a/toolbox/matlab/guide/gui_mainfcn.m',286,1)">gui_mainfcn>local_openfig at 286</a>
+  In <a href="matlab: opentoline('/usr/local/MATLAB/R2012a/toolbox/matlab/guide/gui_mainfcn.m',159,1)">gui_mainfcn at 159</a>
+  In <a href="matlab: opentoline('/home/data/HeadMotion_YCG/YAN_Program/BrainNetViewer/BrainNet.m',51,1)">BrainNet at 51</a>
+  In <a href="matlab: opentoline('/home/data/Projects/microstate/DPARSF_preprocessed/code/REST_V1.8_121225/rest_CallBrainNetViewer.m',40,1)">rest_CallBrainNetViewer at 40</a>
+  In <a href="matlab: opentoline('/home/data/Projects/microstate/DPARSF_preprocessed/code/REST_V1.8_121225/rest_sliceviewer.m',3743,1)">rest_sliceviewer>Overlay_Misc at 3743</a>
+  In <a href="matlab: opentoline('/home/data/Projects/microstate/DPARSF_preprocessed/code/REST_V1.8_121225/rest_sliceviewer.m',678,1)">rest_sliceviewer at 678</a>} 
+{Warning: Texture data too large for graphics device. Fitting to max size available.} 
+{Warning: Texture data too large for graphics device. Fitting to max size available.} 
+{Warning: Texture data too large for graphics device. Fitting to max size available.} 
+{Warning: Texture data too large for graphics device. Fitting to max size available.} 
+Good Bye: milham, 20130829_1339 
+REST Version: 1.8, Release: 20121225

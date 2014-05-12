@@ -1,0 +1,43 @@
+# can not have space before or after the = sign
+# CWAS easythresh: fullModel sepModel
+preprocessDate=12_16_13
+
+standardBrain='/home/data/Projects/hematocrit/mask/MNI152_T1_3mm_brain.nii.gz'
+#for covType in compCor gCor GSR noGSR; do
+for covType in gCor; do
+	if [[ ${covType} = "gCor" ]]; then 
+		mask=/home/data/Projects/workingMemory/mask/CPAC_${preprocessDate}/noGSR/stdMask_68sub_3mm_100percent.nii
+	else
+		mask=/home/data/Projects/workingMemory/mask/CPAC_${preprocessDate}/${covType}/stdMask_68sub_3mm_100percent.nii
+	fi
+
+	for task in TotT; do
+
+		if [[ ${task} = "full" ]]; then 
+			effectList="age_demean DS_FT_demean DS_BT_demean ageByFTdemean ageByBTdemean"
+			dataDir=/home/data/Projects/workingMemory/results/CPAC_${preprocessDate}/groupAnalysis/${covType}/CWAS3mm/${task}ModelFWHM8.mdmr
+		else 
+			effectList="age_demean DS_${task}_demean ageBy${task}demean"
+			dataDir=/home/data/Projects/workingMemory/results/CPAC_${preprocessDate}/groupAnalysis/${covType}/CWAS3mm/${task}SepFWHM8.mdmr
+		fi
+
+		echo ${effectList}
+
+		for effect in ${effectList}; do
+
+			cd ${dataDir}
+
+			outputFile=${effect}
+
+			3dcalc -a ${dataDir}/zstats_${effect}.nii.gz \
+			-expr 'a' -prefix "${dataDir}/cp_zstats_${effect}.nii"
+
+			cmd="easythresh cp_zstats_${effect}.nii ${mask} 1.64 0.05 ${standardBrain} ${outputFile}"
+
+			echo $cmd
+			eval $cmd
+
+			rm ${dataDir}/cp_zstats_${effect}.nii
+		done
+	done
+done

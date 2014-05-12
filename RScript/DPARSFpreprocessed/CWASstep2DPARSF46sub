@@ -1,0 +1,11 @@
+connectir_mdmr.R \
+-i "/home2/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/CWAS46sub" \
+--formula 'Age_category + DS_FT_demean + DS_BT_demean + meanFDJenk_demean + WASI_Full4IQ_demean + hand_demean+AgeByDS_FT_demean + AgeByDS_BT_demean' \
+--model "/home2/data/Projects/workingMemory/data/forRegressionModel.csv" \
+--permutations 15000 \
+--factors2perm 'Age_category,AgeByDS_FT_demean, AgeByDS_BT_demean' \
+--threads 8 \
+--memlimit 12 \
+--save-perms \
+FTandBTogether.mdmr
+

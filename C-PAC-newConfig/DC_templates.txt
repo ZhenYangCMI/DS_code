@@ -1,0 +1,1 @@
+/home/data/Projects/workingMemory/mask/CPAC_1_1_14/noGSR/autoMask_68sub_90percent.nii

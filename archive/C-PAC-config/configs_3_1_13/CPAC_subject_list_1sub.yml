@@ -1,0 +1,24 @@
+-
+    subject_id: 'sub3211'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3211/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub3211/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: 'sub4711'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4711/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/CPAC_analysis/wave1/sub4711/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'

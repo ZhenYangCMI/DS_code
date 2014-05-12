@@ -1,0 +1,6 @@
+-
+    subject_id: 'sub3115'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/wave_1_data_for_Zhen/CPAC_analysis/wave1/sub3115/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/home/data/Projects/workingMemory/data/wave_1_data_for_Zhen/CPAC_analysis/wave1/sub3115/rest_1/rest.nii.gz'

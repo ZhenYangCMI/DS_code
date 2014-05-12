@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# generate the mean fun mask for each group and group together at different threshold
+group='adoles'; 
+rm -rf /home2/data/Projects/workingMemory/mask/meanFunMask${group}thresh0.9.nii
+rm /home2/data/Projects/workingMemory/mask/meanFunMask${group}unthreshed.nii
+3dcalc -a /home2/data/Projects/workingMemory/mask/MNI152_T1_3mm_brain_mask_dil.nii.gz  -b /home2/data/Projects/workingMemory/mask/mean_fun_mask_${group}.nii -expr 'a*step(b-0.89999)' -prefix /home2/data/Projects/workingMemory/mask/meanFunMask${group}thresh0.9.nii
+3dcalc -a /home2/data/Projects/workingMemory/mask/MNI152_T1_3mm_brain_mask_dil.nii.gz  -b /home2/data/Projects/workingMemory/mask/mean_fun_mask_${group}.nii -expr 'a*step(b)' -prefix /home2/data/Projects/workingMemory/mask/meanFunMask${group}unthreshed.nii
+
+# compare group effects on mask
+rm /home2/data/Projects/workingMemory/mask/Dif_*.nii
+3dcalc -a /home2/data/Projects/workingMemory/mask/meanFunMaskadolesthresh0.9.nii  -b /home2/data/Projects/workingMemory/mask/meanFunMaskchildthresh0.9.nii -expr 'a-b' -prefix /home2/data/Projects/workingMemory/mask/Dif_meanFunMaskthresh0.9_AminC.nii
+3dcalc -a /home2/data/Projects/workingMemory/mask/meanFunMaskadolesthresh0.9.nii  -b /home2/data/Projects/workingMemory/mask/meanFunMask46subthresh0.9.nii -expr 'a-b' -prefix /home2/data/Projects/workingMemory/mask/Dif_meanFunMaskthresh0.9_Amin46sub.nii
+3dcalc -a /home2/data/Projects/workingMemory/mask/meanFunMaskchildthresh0.9.nii  -b /home2/data/Projects/workingMemory/mask/meanFunMask46subthresh0.9.nii -expr 'a-b' -prefix /home2/data/Projects/workingMemory/mask/Dif_meanFunMaskthresh0.9_Cmin46sub.nii
+
+# create the grey matter mask and resample it to 4mm resolution
+3dcalc -a /home2/data/Projects/workingMemory/mask/mean_fun_mask_45sub_wo.nii  -b /home2/data/Projects/workingMemory/mask/MNI152_T1_GREY_3mm_25pc_mask.nii.gz -expr 'equals(a,1)*b' -prefix /home2/data/Projects/workingMemory/mask/meanFunMask45sub100pc_Grey25pc.nii
+3dresample -dxyz 4.0 4.0 4.0 -prefix /home2/data/Projects/workingMemory/mask/meanFunMask45sub100pc_Grey25pc_4mm.nii -inset /home2/data/Projects/workingMemory/mask/meanFunMask45sub100pc_Grey25pc.nii

@@ -1,0 +1,2 @@
+Site,Scan,TR (seconds),Reference,Acquisition,FirstTR (start volume index),LastTR (final volume index) 
+wave1,rest_1,2,32,alt+z,0,None

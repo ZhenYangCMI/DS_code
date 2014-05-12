@@ -1,0 +1,7 @@
+
+
+3dclust -mni -1clip 2.3 5.8 1200 DegreeCentrality_Tot_T3_pos_ROI1.nii.gz >> clusterReport.txt
+
+3dclust -mni -1clip 2.3 5.8 1200 DegreeCentrality_Full_T4_pos_ROI6.nii.gz >> clusterReport.txt
+
+3dclust -mni -1clip 2.3 5.8 1200 CWASFollowup_fullModel_ageByBTdemean_ROI1_T5_neg_cluster4.nii.gz >> clusterReport.txt

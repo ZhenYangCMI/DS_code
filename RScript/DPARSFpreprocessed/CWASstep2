@@ -1,0 +1,14 @@
+connectir_mdmr.R \
+--indir=DIRECTORY \
+--formula='A + B + C'\
+--model=CSV file name\
+--permutations=15000\
+--factors2perm='A,B'\
+--threads=8\
+--memlimit=12\
+# output file name
+Model1
+
+
+
+

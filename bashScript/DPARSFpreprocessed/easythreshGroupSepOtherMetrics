@@ -1,0 +1,47 @@
+# can not have space before or after the = sign
+
+
+for group in CWASchild CWASadoles; do
+for modelFile in FT BT; do
+cd /home2/data/Projects/workingMemory/groupAnalysis/CWAS/${group}/${modelFile}.mdmr/
+outputFile=${modelFile}
+rm /home2/data/Projects/workingMemory/groupAnalysis/CWAS/${group}/${modelFile}.mdmr/cp_zstats_DS_${modelFile}.nii
+
+3dcalc -a /home2/data/Projects/workingMemory/groupAnalysis/CWAS/${group}/${modelFile}.mdmr/zstats_DS_${modelFile}.nii.gz \
+-expr 'a' -prefix "/home2/data/Projects/workingMemory/groupAnalysis/CWAS/${group}/${modelFile}.mdmr/cp_zstats_DS_${modelFile}.nii"
+
+cmd1="easythresh \
+/home2/data/Projects/workingMemory/groupAnalysis/CWAS/${group}/${modelFile}.mdmr/cp_zstats_DS_${modelFile}.nii \
+/home2/data/Projects/workingMemory/mask/CWAS_meanFunMask1.0_46sub_4mm_MNIGrey0.25.nii \
+1.64 0.05 \
+/home2/data/Projects/workingMemory/mask/CWAS_meanFunMask1.0_46sub_4mm_MNIGrey0.25.nii \
+${outputFile}"
+
+echo $cmd1
+eval $cmd1
+
+done
+done
+
+group=46sub
+for measure in 
+for modelFile in FT BT; do
+for effect in T1 T2 T3; do
+cd /home2/data/Projects/workingMemory/groupAnalysis/CWAS/${group}/${modelFile}.mdmr/
+outputFile=${effect}
+
+3dcalc -a /home2/data/Projects/workingMemory/groupAnalysis/CWAS/${group}/${modelFile}.mdmr/zstats_${effect}.nii.gz \
+-expr 'a' -prefix "/home2/data/Projects/workingMemory/groupAnalysis/CWAS/${group}/${modelFile}.mdmr/cp_zstats_${effect}.nii"
+
+cmd1="easythresh \
+/home2/data/Projects/workingMemory/groupAnalysis/CWAS/${group}/${modelFile}.mdmr/cp_zstats_${effect}.nii \
+/home2/data/Projects/workingMemory/mask/CWAS_meanFunMask1.0_46sub_4mm_MNIGrey0.25.nii \
+1.64 0.05 \
+/home2/data/Projects/workingMemory/mask/CWAS_meanFunMask1.0_46sub_4mm_MNIGrey0.25.nii \
+${outputFile}"
+
+echo $cmd1
+eval $cmd1
+
+done
+done

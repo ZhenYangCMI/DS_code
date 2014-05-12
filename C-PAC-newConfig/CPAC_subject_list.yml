@@ -1,0 +1,816 @@
+-
+    subject_id: '4347'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4347/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4347/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4717'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4717/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4717/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '8578'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8578/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8578/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4348'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4348/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4348/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3200'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3200/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3200/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3158'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3158/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3158/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3211'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3211/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3211/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3201'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3201/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3201/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3236'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3236/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3236/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '8539'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8539/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8539/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '8551'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8551/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8551/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3217'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3217/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3217/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3172'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3172/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3172/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4494'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4494/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4494/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4804'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4804/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4804/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3220'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3220/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3220/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '8537'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8537/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8537/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3193'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3193/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3193/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3119'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3119/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3119/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4664'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4664/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4664/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3216'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3216/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3216/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3304'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3304/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3304/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3255'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3255/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3255/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3157'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3157/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3157/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4545'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4545/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4545/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3150'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3150/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3150/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4543'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4543/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4543/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3147'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3147/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3147/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4486'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4486/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4486/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3222'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3222/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3222/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '8581'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8581/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8581/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3152'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3152/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3152/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4379'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4379/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4379/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3148'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3148/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3148/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3195'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3195/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3195/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '8818'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8818/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8818/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4489'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4489/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4489/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3156'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3156/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3156/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '8697'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8697/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8697/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3115'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3115/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3115/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '8559'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8559/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/8559/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3125'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3125/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3125/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3232'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3232/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3232/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3306'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3306/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3306/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3305'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3305/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3305/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3134'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3134/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3134/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4708'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4708/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4708/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4522'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4522/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4522/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4406'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4406/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4406/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4711'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4711/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4711/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4866'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4866/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4866/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4359'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4359/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4359/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4591'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4591/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4591/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4826'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4826/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4826/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4683'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4683/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4683/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4364'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4364/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4364/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4449'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4449/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4449/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4380'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4380/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4380/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4351'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4351/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4351/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3326'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3326/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3326/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4727'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4727/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4727/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4705'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4705/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4705/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '3325'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3325/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/3325/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4523'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4523/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4523/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4642'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4642/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4642/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4514'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4514/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4514/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4450'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4450/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4450/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'
+-
+    subject_id: '4415'
+    unique_id: ''
+    anat: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4415/T1Img/mprage.nii'
+    rest: 
+      FunImg_rest: '/home/data/Projects/workingMemory/data/CPACAnalysisNew/wave1/4415/FunImg/rest.nii'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '32'
+        first_tr: '0'
+        last_tr: 'None'

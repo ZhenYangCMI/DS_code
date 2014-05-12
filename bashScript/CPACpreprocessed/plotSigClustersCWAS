@@ -1,0 +1,20 @@
+
+
+#sign=neg
+sign=pos
+
+model=fullModel # fullModel for FT and BT
+#model=TotTSep # TotTSep model for Tot
+
+#effect=ageByFTdemean
+effect=ageByBTdemean
+#effect=ageByTotTdemean
+
+T=T5 #for Tot: T3 is for ageByTot; for Full: T4 is for ageByDF and T5 is for ageByDB
+
+maskDir=/home/data/Projects/workingMemory/results/CPAC_12_16_13/groupAnalysis/compCor/CWAS3mm/followUpFC_meanRegress/groupAnalysis/easythresh;
+threshResults=/home/data/Projects/workingMemory/figs/paper_figs/CWASFolloup/thresh_${model}_${effect}_ROI1_${T}_Z_cmb.nii
+
+for clust in 1 2; do
+3dcalc -a ${maskDir}/cluster_mask_${model}_${effect}_ROI1_${T}_Z_${sign}.nii.gz -b ${threshResults} -expr "b*equals(a,${clust})" -prefix /home/data/Projects/workingMemory/figs/paper_figs/INTROImask/CWASFollowup_${model}_${effect}_ROI1_${T}_${sign}_cluster${clust}.nii.gz
+done

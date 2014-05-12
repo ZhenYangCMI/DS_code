@@ -1,0 +1,34 @@
+# can not have space before or after the = sign
+
+for ROImaskGroup in adoles_BT; do
+for group in adoles_BT child_BT; do
+mkdir -p /home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/ttestPerformGroup/HighMinusLow/easythresh
+
+3dcalc -a /home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/ttestPerformGroup/HighMinusLow/${ROImaskGroup}Mask${group}SubgroupHighMinusLow_Z.nii \
+-expr 'a' -prefix "/home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/ttestPerformGroup/HighMinusLow/easythresh/${ROImaskGroup}Mask${group}SubgroupHighMinusLow_Z_pos.nii"
+
+3dcalc -a /home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/ttestPerformGroup/HighMinusLow/${ROImaskGroup}Mask${group}SubgroupHighMinusLow_Z.nii \
+-expr '(-1)*a' -prefix "/home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/ttestPerformGroup/HighMinusLow/easythresh/${ROImaskGroup}Mask${group}SubgroupHighMinusLow_Z_neg.nii"
+
+cd /home/data/Projects/workingMemory/groupAnalysis/CWAS/46sub/followup/ttestPerformGroup/HighMinusLow/easythresh/
+
+for sign in pos neg; do
+outputFile=${ROImaskGroup}Mask${group}SubgroupHighMinusLow_Z_${sign}
+
+cmd1="easythresh \
+${ROImaskGroup}Mask${group}SubgroupHighMinusLow_Z_${sign}.nii \
+/home2/data/Projects/workingMemory/mask/CWAS_newMask/stdMask_46sub_100percent.nii \
+2.33 0.05 \
+/home2/data/Projects/workingMemory/mask/CWAS_newMask/stdMask_46sub_100percent.nii \
+${outputFile}"
+
+echo $cmd1
+eval $cmd1
+done
+
+3dcalc -a thresh_${ROImaskGroup}Mask${group}SubgroupHighMinusLow_Z_pos.nii.gz -b thresh_${ROImaskGroup}Mask${group}SubgroupHighMinusLow_Z_neg.nii.gz -expr 'a+b*(-1)' -prefix "thresh_${ROImaskGroup}Mask${group}SubgroupHighMinusLow_Z_cmb.nii"
+
+done
+done
+
+

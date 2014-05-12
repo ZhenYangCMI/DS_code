@@ -1,0 +1,3 @@
+#!/bin/bash
+
+3dcalc -a /home2/data/Projects/workingMemory/mask/DPARSF_AllResampled_BrainMask_05_91x109x91_4mm.nii  -b /home2/data/Projects/workingMemory/mask/meanFunMask_DPARSF_46sub_RPI.nii -expr 'a*step(b-0.89999)' -prefix /home2/data/Projects/workingMemory/mask/meanFunMask_DPARSF_46sub_RPI_90pct.nii

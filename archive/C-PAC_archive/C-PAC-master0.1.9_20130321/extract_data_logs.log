@@ -1,0 +1,296 @@
+DEBUG 2013-03-24 12:31:59,700 332 extracting data for subject: sub3211
+DEBUG 2013-03-24 12:31:59,700 315 No sessions
+DEBUG 2013-03-24 12:31:59,701 230 site for sub sub3211 -> wave1
+DEBUG 2013-03-24 12:31:59,701 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,701 332 extracting data for subject: sub4711
+DEBUG 2013-03-24 12:31:59,701 315 No sessions
+DEBUG 2013-03-24 12:31:59,702 230 site for sub sub4711 -> wave1
+DEBUG 2013-03-24 12:31:59,702 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,702 332 extracting data for subject: sub4727
+DEBUG 2013-03-24 12:31:59,702 315 No sessions
+DEBUG 2013-03-24 12:31:59,703 230 site for sub sub4727 -> wave1
+DEBUG 2013-03-24 12:31:59,703 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,703 332 extracting data for subject: sub4866
+DEBUG 2013-03-24 12:31:59,703 315 No sessions
+DEBUG 2013-03-24 12:31:59,703 230 site for sub sub4866 -> wave1
+DEBUG 2013-03-24 12:31:59,704 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,704 332 extracting data for subject: sub4705
+DEBUG 2013-03-24 12:31:59,704 315 No sessions
+DEBUG 2013-03-24 12:31:59,704 230 site for sub sub4705 -> wave1
+DEBUG 2013-03-24 12:31:59,704 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,705 332 extracting data for subject: sub4388
+DEBUG 2013-03-24 12:31:59,705 315 No sessions
+DEBUG 2013-03-24 12:31:59,705 230 site for sub sub4388 -> wave1
+DEBUG 2013-03-24 12:31:59,705 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,706 332 extracting data for subject: sub4364
+DEBUG 2013-03-24 12:31:59,706 315 No sessions
+DEBUG 2013-03-24 12:31:59,706 230 site for sub sub4364 -> wave1
+DEBUG 2013-03-24 12:31:59,706 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,706 332 extracting data for subject: sub4401
+DEBUG 2013-03-24 12:31:59,707 315 No sessions
+DEBUG 2013-03-24 12:31:59,707 230 site for sub sub4401 -> wave1
+DEBUG 2013-03-24 12:31:59,707 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,707 332 extracting data for subject: sub4449
+DEBUG 2013-03-24 12:31:59,707 315 No sessions
+DEBUG 2013-03-24 12:31:59,708 230 site for sub sub4449 -> wave1
+DEBUG 2013-03-24 12:31:59,708 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,708 332 extracting data for subject: sub3216
+DEBUG 2013-03-24 12:31:59,708 315 No sessions
+DEBUG 2013-03-24 12:31:59,709 230 site for sub sub3216 -> wave1
+DEBUG 2013-03-24 12:31:59,709 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,709 332 extracting data for subject: sub4522
+DEBUG 2013-03-24 12:31:59,709 315 No sessions
+DEBUG 2013-03-24 12:31:59,710 230 site for sub sub4522 -> wave1
+DEBUG 2013-03-24 12:31:59,710 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,710 332 extracting data for subject: sub4489
+DEBUG 2013-03-24 12:31:59,710 315 No sessions
+DEBUG 2013-03-24 12:31:59,711 230 site for sub sub4489 -> wave1
+DEBUG 2013-03-24 12:31:59,711 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,711 332 extracting data for subject: sub4450
+DEBUG 2013-03-24 12:31:59,711 315 No sessions
+DEBUG 2013-03-24 12:31:59,712 230 site for sub sub4450 -> wave1
+DEBUG 2013-03-24 12:31:59,712 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,712 332 extracting data for subject: sub3193
+DEBUG 2013-03-24 12:31:59,712 315 No sessions
+DEBUG 2013-03-24 12:31:59,713 230 site for sub sub3193 -> wave1
+DEBUG 2013-03-24 12:31:59,713 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,713 332 extracting data for subject: sub3134
+DEBUG 2013-03-24 12:31:59,713 315 No sessions
+DEBUG 2013-03-24 12:31:59,714 230 site for sub sub3134 -> wave1
+DEBUG 2013-03-24 12:31:59,714 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,714 332 extracting data for subject: sub3148
+DEBUG 2013-03-24 12:31:59,714 315 No sessions
+DEBUG 2013-03-24 12:31:59,715 230 site for sub sub3148 -> wave1
+DEBUG 2013-03-24 12:31:59,715 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,715 332 extracting data for subject: sub3195
+DEBUG 2013-03-24 12:31:59,715 315 No sessions
+DEBUG 2013-03-24 12:31:59,715 230 site for sub sub3195 -> wave1
+DEBUG 2013-03-24 12:31:59,716 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,716 332 extracting data for subject: sub3150
+DEBUG 2013-03-24 12:31:59,716 315 No sessions
+DEBUG 2013-03-24 12:31:59,716 230 site for sub sub3150 -> wave1
+DEBUG 2013-03-24 12:31:59,716 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,717 332 extracting data for subject: sub3172
+DEBUG 2013-03-24 12:31:59,717 315 No sessions
+DEBUG 2013-03-24 12:31:59,717 230 site for sub sub3172 -> wave1
+DEBUG 2013-03-24 12:31:59,717 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,717 332 extracting data for subject: sub3147
+DEBUG 2013-03-24 12:31:59,718 315 No sessions
+DEBUG 2013-03-24 12:31:59,718 230 site for sub sub3147 -> wave1
+DEBUG 2013-03-24 12:31:59,718 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,718 332 extracting data for subject: sub3119
+DEBUG 2013-03-24 12:31:59,719 315 No sessions
+DEBUG 2013-03-24 12:31:59,719 230 site for sub sub3119 -> wave1
+DEBUG 2013-03-24 12:31:59,719 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,719 332 extracting data for subject: sub3115
+DEBUG 2013-03-24 12:31:59,719 315 No sessions
+DEBUG 2013-03-24 12:31:59,720 230 site for sub sub3115 -> wave1
+DEBUG 2013-03-24 12:31:59,720 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,720 332 extracting data for subject: sub3125
+DEBUG 2013-03-24 12:31:59,720 315 No sessions
+DEBUG 2013-03-24 12:31:59,721 230 site for sub sub3125 -> wave1
+DEBUG 2013-03-24 12:31:59,721 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,721 332 extracting data for subject: sub3152
+DEBUG 2013-03-24 12:31:59,721 315 No sessions
+DEBUG 2013-03-24 12:31:59,722 230 site for sub sub3152 -> wave1
+DEBUG 2013-03-24 12:31:59,722 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,722 332 extracting data for subject: sub3158
+DEBUG 2013-03-24 12:31:59,722 315 No sessions
+DEBUG 2013-03-24 12:31:59,723 230 site for sub sub3158 -> wave1
+DEBUG 2013-03-24 12:31:59,723 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,723 332 extracting data for subject: sub3156
+DEBUG 2013-03-24 12:31:59,723 315 No sessions
+DEBUG 2013-03-24 12:31:59,724 230 site for sub sub3156 -> wave1
+DEBUG 2013-03-24 12:31:59,724 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,724 332 extracting data for subject: sub3157
+DEBUG 2013-03-24 12:31:59,724 315 No sessions
+DEBUG 2013-03-24 12:31:59,725 230 site for sub sub3157 -> wave1
+DEBUG 2013-03-24 12:31:59,725 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,725 332 extracting data for subject: sub3200
+DEBUG 2013-03-24 12:31:59,725 315 No sessions
+DEBUG 2013-03-24 12:31:59,726 230 site for sub sub3200 -> wave1
+DEBUG 2013-03-24 12:31:59,726 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,726 332 extracting data for subject: sub3201
+DEBUG 2013-03-24 12:31:59,726 315 No sessions
+DEBUG 2013-03-24 12:31:59,727 230 site for sub sub3201 -> wave1
+DEBUG 2013-03-24 12:31:59,727 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,727 332 extracting data for subject: sub3217
+DEBUG 2013-03-24 12:31:59,727 315 No sessions
+DEBUG 2013-03-24 12:31:59,727 230 site for sub sub3217 -> wave1
+DEBUG 2013-03-24 12:31:59,728 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,728 332 extracting data for subject: sub3220
+DEBUG 2013-03-24 12:31:59,728 315 No sessions
+DEBUG 2013-03-24 12:31:59,728 230 site for sub sub3220 -> wave1
+DEBUG 2013-03-24 12:31:59,729 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,729 332 extracting data for subject: sub3222
+DEBUG 2013-03-24 12:31:59,729 315 No sessions
+DEBUG 2013-03-24 12:31:59,729 230 site for sub sub3222 -> wave1
+DEBUG 2013-03-24 12:31:59,730 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,730 332 extracting data for subject: sub3236
+DEBUG 2013-03-24 12:31:59,730 315 No sessions
+DEBUG 2013-03-24 12:31:59,730 230 site for sub sub3236 -> wave1
+DEBUG 2013-03-24 12:31:59,731 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,731 332 extracting data for subject: sub3255
+DEBUG 2013-03-24 12:31:59,731 315 No sessions
+DEBUG 2013-03-24 12:31:59,731 230 site for sub sub3255 -> wave1
+DEBUG 2013-03-24 12:31:59,732 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,732 332 extracting data for subject: sub3269
+DEBUG 2013-03-24 12:31:59,732 315 No sessions
+DEBUG 2013-03-24 12:31:59,732 230 site for sub sub3269 -> wave1
+DEBUG 2013-03-24 12:31:59,732 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,733 332 extracting data for subject: sub4348
+DEBUG 2013-03-24 12:31:59,733 315 No sessions
+DEBUG 2013-03-24 12:31:59,733 230 site for sub sub4348 -> wave1
+DEBUG 2013-03-24 12:31:59,733 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,733 332 extracting data for subject: sub3304
+DEBUG 2013-03-24 12:31:59,734 315 No sessions
+DEBUG 2013-03-24 12:31:59,734 230 site for sub sub3304 -> wave1
+DEBUG 2013-03-24 12:31:59,734 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,734 332 extracting data for subject: sub3305
+DEBUG 2013-03-24 12:31:59,735 315 No sessions
+DEBUG 2013-03-24 12:31:59,735 230 site for sub sub3305 -> wave1
+DEBUG 2013-03-24 12:31:59,735 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,735 332 extracting data for subject: sub3306
+DEBUG 2013-03-24 12:31:59,735 315 No sessions
+DEBUG 2013-03-24 12:31:59,736 230 site for sub sub3306 -> wave1
+DEBUG 2013-03-24 12:31:59,736 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,736 332 extracting data for subject: sub3312
+DEBUG 2013-03-24 12:31:59,736 315 No sessions
+DEBUG 2013-03-24 12:31:59,737 230 site for sub sub3312 -> wave1
+DEBUG 2013-03-24 12:31:59,737 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,737 332 extracting data for subject: sub3325
+DEBUG 2013-03-24 12:31:59,737 315 No sessions
+DEBUG 2013-03-24 12:31:59,738 230 site for sub sub3325 -> wave1
+DEBUG 2013-03-24 12:31:59,738 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,738 332 extracting data for subject: sub3326
+DEBUG 2013-03-24 12:31:59,738 315 No sessions
+DEBUG 2013-03-24 12:31:59,739 230 site for sub sub3326 -> wave1
+DEBUG 2013-03-24 12:31:59,739 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,739 332 extracting data for subject: sub4345
+DEBUG 2013-03-24 12:31:59,739 315 No sessions
+DEBUG 2013-03-24 12:31:59,740 230 site for sub sub4345 -> wave1
+DEBUG 2013-03-24 12:31:59,740 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,740 332 extracting data for subject: sub4347
+DEBUG 2013-03-24 12:31:59,740 315 No sessions
+DEBUG 2013-03-24 12:31:59,741 230 site for sub sub4347 -> wave1
+DEBUG 2013-03-24 12:31:59,741 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,741 332 extracting data for subject: sub4349
+DEBUG 2013-03-24 12:31:59,741 315 No sessions
+DEBUG 2013-03-24 12:31:59,742 230 site for sub sub4349 -> wave1
+DEBUG 2013-03-24 12:31:59,742 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,742 332 extracting data for subject: sub4351
+DEBUG 2013-03-24 12:31:59,742 315 No sessions
+DEBUG 2013-03-24 12:31:59,742 230 site for sub sub4351 -> wave1
+DEBUG 2013-03-24 12:31:59,743 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,743 332 extracting data for subject: sub4359
+DEBUG 2013-03-24 12:31:59,743 315 No sessions
+DEBUG 2013-03-24 12:31:59,743 230 site for sub sub4359 -> wave1
+DEBUG 2013-03-24 12:31:59,744 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,744 332 extracting data for subject: sub4380
+DEBUG 2013-03-24 12:31:59,744 315 No sessions
+DEBUG 2013-03-24 12:31:59,744 230 site for sub sub4380 -> wave1
+DEBUG 2013-03-24 12:31:59,744 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,745 332 extracting data for subject: sub4379
+DEBUG 2013-03-24 12:31:59,745 315 No sessions
+DEBUG 2013-03-24 12:31:59,745 230 site for sub sub4379 -> wave1
+DEBUG 2013-03-24 12:31:59,745 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,745 332 extracting data for subject: sub4406
+DEBUG 2013-03-24 12:31:59,746 315 No sessions
+DEBUG 2013-03-24 12:31:59,746 230 site for sub sub4406 -> wave1
+DEBUG 2013-03-24 12:31:59,746 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,746 332 extracting data for subject: sub4412
+DEBUG 2013-03-24 12:31:59,747 315 No sessions
+DEBUG 2013-03-24 12:31:59,747 230 site for sub sub4412 -> wave1
+DEBUG 2013-03-24 12:31:59,747 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,747 332 extracting data for subject: sub4486
+DEBUG 2013-03-24 12:31:59,747 315 No sessions
+DEBUG 2013-03-24 12:31:59,748 230 site for sub sub4486 -> wave1
+DEBUG 2013-03-24 12:31:59,748 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,748 332 extracting data for subject: sub4415
+DEBUG 2013-03-24 12:31:59,748 315 No sessions
+DEBUG 2013-03-24 12:31:59,749 230 site for sub sub4415 -> wave1
+DEBUG 2013-03-24 12:31:59,749 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,749 332 extracting data for subject: sub4417
+DEBUG 2013-03-24 12:31:59,749 315 No sessions
+DEBUG 2013-03-24 12:31:59,750 230 site for sub sub4417 -> wave1
+DEBUG 2013-03-24 12:31:59,750 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,750 332 extracting data for subject: sub4804
+DEBUG 2013-03-24 12:31:59,750 315 No sessions
+DEBUG 2013-03-24 12:31:59,751 230 site for sub sub4804 -> wave1
+DEBUG 2013-03-24 12:31:59,751 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,751 332 extracting data for subject: sub4514
+DEBUG 2013-03-24 12:31:59,751 315 No sessions
+DEBUG 2013-03-24 12:31:59,752 230 site for sub sub4514 -> wave1
+DEBUG 2013-03-24 12:31:59,752 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,752 332 extracting data for subject: sub4826
+DEBUG 2013-03-24 12:31:59,752 315 No sessions
+DEBUG 2013-03-24 12:31:59,753 230 site for sub sub4826 -> wave1
+DEBUG 2013-03-24 12:31:59,753 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,753 332 extracting data for subject: sub4534
+DEBUG 2013-03-24 12:31:59,753 315 No sessions
+DEBUG 2013-03-24 12:31:59,754 230 site for sub sub4534 -> wave1
+DEBUG 2013-03-24 12:31:59,754 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,754 332 extracting data for subject: sub4523
+DEBUG 2013-03-24 12:31:59,754 315 No sessions
+DEBUG 2013-03-24 12:31:59,755 230 site for sub sub4523 -> wave1
+DEBUG 2013-03-24 12:31:59,755 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,755 332 extracting data for subject: sub4543
+DEBUG 2013-03-24 12:31:59,755 315 No sessions
+DEBUG 2013-03-24 12:31:59,756 230 site for sub sub4543 -> wave1
+DEBUG 2013-03-24 12:31:59,756 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,756 332 extracting data for subject: sub4642
+DEBUG 2013-03-24 12:31:59,756 315 No sessions
+DEBUG 2013-03-24 12:31:59,756 230 site for sub sub4642 -> wave1
+DEBUG 2013-03-24 12:31:59,757 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,757 332 extracting data for subject: sub4545
+DEBUG 2013-03-24 12:31:59,757 315 No sessions
+DEBUG 2013-03-24 12:31:59,757 230 site for sub sub4545 -> wave1
+DEBUG 2013-03-24 12:31:59,758 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,758 332 extracting data for subject: sub8537
+DEBUG 2013-03-24 12:31:59,758 315 No sessions
+DEBUG 2013-03-24 12:31:59,759 230 site for sub sub8537 -> wave1
+DEBUG 2013-03-24 12:31:59,759 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,759 332 extracting data for subject: sub4591
+DEBUG 2013-03-24 12:31:59,759 315 No sessions
+DEBUG 2013-03-24 12:31:59,759 230 site for sub sub4591 -> wave1
+DEBUG 2013-03-24 12:31:59,760 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,760 332 extracting data for subject: sub4708
+DEBUG 2013-03-24 12:31:59,760 315 No sessions
+DEBUG 2013-03-24 12:31:59,760 230 site for sub sub4708 -> wave1
+DEBUG 2013-03-24 12:31:59,761 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,761 332 extracting data for subject: sub4664
+DEBUG 2013-03-24 12:31:59,761 315 No sessions
+DEBUG 2013-03-24 12:31:59,761 230 site for sub sub4664 -> wave1
+DEBUG 2013-03-24 12:31:59,761 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,762 332 extracting data for subject: sub4683
+DEBUG 2013-03-24 12:31:59,762 315 No sessions
+DEBUG 2013-03-24 12:31:59,762 230 site for sub sub4683 -> wave1
+DEBUG 2013-03-24 12:31:59,762 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,762 332 extracting data for subject: sub8552
+DEBUG 2013-03-24 12:31:59,763 315 No sessions
+DEBUG 2013-03-24 12:31:59,763 230 site for sub sub8552 -> wave1
+DEBUG 2013-03-24 12:31:59,763 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,763 332 extracting data for subject: sub4717
+DEBUG 2013-03-24 12:31:59,763 315 No sessions
+DEBUG 2013-03-24 12:31:59,764 230 site for sub sub4717 -> wave1
+DEBUG 2013-03-24 12:31:59,764 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,764 332 extracting data for subject: sub8581
+DEBUG 2013-03-24 12:31:59,764 315 No sessions
+DEBUG 2013-03-24 12:31:59,765 230 site for sub sub8581 -> wave1
+DEBUG 2013-03-24 12:31:59,765 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,765 332 extracting data for subject: sub8559
+DEBUG 2013-03-24 12:31:59,765 315 No sessions
+DEBUG 2013-03-24 12:31:59,766 230 site for sub sub8559 -> wave1
+DEBUG 2013-03-24 12:31:59,766 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,766 332 extracting data for subject: sub8539
+DEBUG 2013-03-24 12:31:59,766 315 No sessions
+DEBUG 2013-03-24 12:31:59,767 230 site for sub sub8539 -> wave1
+DEBUG 2013-03-24 12:31:59,767 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,767 332 extracting data for subject: sub8578
+DEBUG 2013-03-24 12:31:59,767 315 No sessions
+DEBUG 2013-03-24 12:31:59,768 230 site for sub sub8578 -> wave1
+DEBUG 2013-03-24 12:31:59,768 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']
+DEBUG 2013-03-24 12:31:59,768 332 extracting data for subject: sub8551
+DEBUG 2013-03-24 12:31:59,768 315 No sessions
+DEBUG 2013-03-24 12:31:59,769 230 site for sub sub8551 -> wave1
+DEBUG 2013-03-24 12:31:59,769 231 scan parameters for the above site ['alt+z', '0', 'None', '32', '2']

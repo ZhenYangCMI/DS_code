@@ -1,0 +1,14 @@
+anatomicalTemplate  :  /home/data/Projects/workingMemory/data/CPACAnalysisNew/%s/%s/T1Img/mprage.nii 
+
+functionalTemplate  :  /home/data/Projects/workingMemory/data/CPACAnalysisNew/%s/%s/FunImg/rest.nii 
+
+subjectList  :  /home/data/Projects/workingMemory/code/C-PAC-newConfig/subjectList_Num_68sub.txt 
+
+exclusionSubjectList  :  None 
+
+siteList  :  None 
+
+scanParametersCSV  :  /home/data/Projects/workingMemory/code/C-PAC-newConfig/scan_parameters_new.csv 
+
+outputSubjectListLocation  :  /home/data/Projects/workingMemory/code/C-PAC-newConfig 
+

@@ -1,0 +1,13 @@
+# can not have space before or after the = sign
+
+modelFile='age.mdmr'
+statFile='zstats_Age_category.nii.gz'
+outputFile='age'
+
+easythresh \
+/home2/data/Projects/workingMemory/groupAnalysis/CWAS/CWAS44sub/${modelFile}/${statFile} \
+/home2/data/Projects/workingMemory/mask/CWAS_meanFunMask1.0_46sub_4mm_MNIGrey0.25.nii \
+1.64 0.05 \
+/home2/data/Projects/workingMemory/mask/CWAS_meanFunMask1.0_46sub_4mm_MNIGrey0.25.nii \
+${outputFile}
+
