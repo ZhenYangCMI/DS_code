@@ -1,53 +1,60 @@
-
+i
 
 close all
 clear all
 clc
-javaaddpath('poi_library/poi-3.8-20120326.jar');
-javaaddpath('poi_library/poi-ooxml-3.8-20120326.jar');
-javaaddpath('poi_library/poi-ooxml-schemas-3.8-20120326.jar');
-javaaddpath('poi_library/xmlbeans-2.3.0.jar');
-javaaddpath('poi_library/dom4j-1.6.1.jar');
-javaaddpath('poi_library/stax-api-1.0.1.jar');
+addpath /home/data/Projects/Zhen/commonCode
+codeDir='/home/data/Projects/Zhen/commonCode/';
+
+javaaddpath([codeDir, 'poi_library/poi-3.8-20120326.jar']);
+javaaddpath([codeDir, 'poi_library/poi-ooxml-3.8-20120326.jar']);
+javaaddpath([codeDir, 'poi_library/poi-ooxml-schemas-3.8-20120326.jar']);
+javaaddpath([codeDir, 'poi_library/xmlbeans-2.3.0.jar']);
+javaaddpath([codeDir, 'poi_library/dom4j-1.6.1.jar']);
+javaaddpath([codeDir, 'poi_library/stax-api-1.0.1.jar']);
+
 
 % define path and variables
-maskDir='/home2/data/Projects/workingMemory/figs/paper_figs/clusterMask/INT/';
-atlasDir='/home2/data/Projects/workingMemory/mask/atlas/';
+maskDir='/home/data/Projects/Zhen/workingMemory/figs/paper_figs/clusterMask/';
+atlasDir='/home2/data/Projects/Zhen/workingMemory/mask/atlas/';
 
-clustList=dir([maskDir, 'cluster_mask_*.nii.gz'])
+clustList=dir([maskDir, 'cluster_mask*.nii.gz'])
+resolution='2mm';
 
 resultDir=maskDir;
 delete ([resultDir, 'clusterReport.xls'])
 
 % read in the MNI stand mask
-standardMask=[atlasDir, 'MNI152_T1_2mm_brain_mask.nii.gz'];
+standardMask=[atlasDir, 'MNI152_T1_', resolution, '_brain_mask.nii.gz'];
 [OutdataStand,VoxDimStand,HeaderStand]=rest_readfile(standardMask);
 dataStand1D=reshape(OutdataStand,[],1);
 standIndex = find(dataStand1D);
 
+
 % read in the cluster mask
 t=1;
 for i=1:length(clustList)
+    
     effect=clustList(i).name
-    effect=effect(14:end-7);
+    effect=cellstr(effect(1:end-7));
     str1='A';
     linenumber=sprintf('%s%d',str1,t);
     xlwrite([resultDir, 'clusterReport.xls'],effect, 'sheet1', linenumber);
     
-    maskFile=[maskDir, 'cluster_mask_', char(effect), '.nii.gz'];
-    
-    
+    maskFile=[maskDir, char(effect), '.nii.gz'];
+        
     % read in the mask and reshape to 1D
     [OutdataMask,VoxDimMask,HeaderMask]=rest_readfile(maskFile);
     [nDim1Mask nDim2Mask nDim3Mask]=size(OutdataMask);
     maskImg1D=reshape(OutdataMask, [], 1);
     maskImg1D=maskImg1D(standIndex, 1);
+    %maskImg1D=logical(maskImg1D);  % binarize the mask
     numClust=length(unique(maskImg1D(find(maskImg1D~=0))))
     
     t=t+1;
     % read in the atlas
-    atlasList={'HOC', 'HOSC', 'networks', 'broadmann', 'cerebellum'};
-    %atlasList={'HOC', 'HOSC'}
+    atlasList={'HOC', 'HOSC', 'networks', 'brodmann', 'cerebellum'};
+    %atlasList={'networks'}
     for j=1:length(atlasList)
         atlas=char(atlasList{j})
         
@@ -55,27 +62,27 @@ for i=1:length(clustList)
             title2={'clusterSize', 'prctInClust', 'HOCIndx', 'atlasROIsize', 'prctInAtlas', 'HOCRegion', 'side'};
             linenumber=sprintf('%s%d',str1,t);
             xlwrite([resultDir, 'clusterReport.xls'],title2, 'sheet1', linenumber);
-            atlasFile=[atlasDir, atlas, '_2mm.nii'];
+            atlasFile=[atlasDir, atlas, '_', resolution, '.nii.gz'];
         elseif strcmp(atlas, 'HOSC')
             title2={'clusterSize', 'prctInClust', 'HOSCIndx', 'atlasROIsize', 'prctInAtlas', 'HOSCRegion', 'side'};
             linenumber=sprintf('%s%d',str1,t);
             xlwrite([resultDir, 'clusterReport.xls'],title2, 'sheet1', linenumber);
-            atlasFile=[atlasDir, atlas, '_2mm.nii'];
+            atlasFile=[atlasDir, atlas, '_', resolution, '.nii.gz'];
         elseif strcmp(atlas, 'networks')
             title2= {'clusterSize', 'prctInClust', 'networkIndx', 'atlasROIsize', 'prctInAtlas', 'networks', 'side(N/A)'};
             linenumber=sprintf('%s%d',str1,t);
             xlwrite([resultDir, 'clusterReport.xls'],title2, 'sheet1', linenumber);
-            atlasFile=[atlasDir, atlas, '_2mm.nii.gz'];
-        elseif strcmp(atlas, 'broadmann')
+            atlasFile=[atlasDir, atlas, '_', resolution, '.nii.gz'];
+        elseif strcmp(atlas, 'brodmann')
             title2={'clusterSize', 'prctInClust', 'BAIndx', 'atlasROIsize', 'prctInAtlas', 'BA', 'side(N/A)' };
             linenumber=sprintf('%s%d',str1,t);
             xlwrite([resultDir, 'clusterReport.xls'],title2, 'sheet1', linenumber);
-            atlasFile=[atlasDir, atlas, '_2mm.nii.gz'];
+            atlasFile=[atlasDir, atlas, '_', resolution, '.nii.gz'];
         elseif strcmp(atlas, 'cerebellum')
             title2={'clusterSize', 'prctInClust', 'CRBLIndx', 'atlasROIsize', 'prctInAtlas', 'CRBLRegion', 'side' };
             linenumber=sprintf('%s%d',str1,t);
             xlwrite([resultDir, 'clusterReport.xls'],title2, 'sheet1', linenumber);
-            atlasFile=[atlasDir, atlas, '_2mm.nii.gz'];
+            atlasFile=[atlasDir, atlas, '_', resolution, '.nii.gz'];
         end
         
         

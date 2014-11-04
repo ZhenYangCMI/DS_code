@@ -1,0 +1,35 @@
+connectir_subdist.R \
+--infuncs1='/home/data/Projects/Zhen/workingMemory/DS_code/RScript/CPACpreprocessed/CWASdataPath_compCor_68sub_3mm.txt' \
+--ztransform \
+--brainmask1='/home/data/Projects/Zhen/workingMemory/mask/CPAC_12_16_13/compCor/stdMask_68sub_3mm_preSmooth_100percent.nii.gz' \
+--bg=/home2/data/Projects/Zhen/workingMemory/mask/MNI152_T1_GREY_3mm_25pc_mask.nii.gz \
+--memlimit=30 \
+--forks=20 \
+--threads=1 \
+--method=pearson \
+/home/data/Projects/Zhen/workingMemory/results/CPAC_12_16_13/groupAnalysis/compCor/CWAS3mmSmallMask
+
+
+
+connectir_subdist.R \
+--infuncs1='/home/data/Projects/Zhen/workingMemory/DS_code/RScript/CPACpreprocessed/CWASdataPath_GSR_68sub_3mm.txt' \
+--ztransform \
+--brainmask1='/home/data/Projects/Zhen/workingMemory/mask/CPAC_12_16_13/GSR/stdMask_68sub_3mm_preSmooth_100percent.nii.gz' \
+--bg=/home2/data/Projects/Zhen/workingMemory/mask/MNI152_T1_GREY_3mm_25pc_mask.nii.gz \
+--memlimit=30 \
+--forks=20 \
+--threads=1 \
+--method=pearson \
+/home/data/Projects/Zhen/workingMemory/results/CPAC_12_16_13/groupAnalysis/GSR/CWAS3mmSmallMask
+
+
+connectir_subdist.R \
+--infuncs1='/home/data/Projects/Zhen/workingMemory/DS_code/RScript/CPACpreprocessed/CWASdataPath_noGSR_68sub_3mm.txt' \
+--ztransform \
+--brainmask1='/home/data/Projects/Zhen/workingMemory/mask/CPAC_12_16_13/noGSR/stdMask_68sub_3mm_preSmooth_100percent.nii.gz' \
+--bg=/home2/data/Projects/Zhen/workingMemory/mask/MNI152_T1_GREY_3mm_25pc_mask.nii.gz \
+--memlimit=30 \
+--forks=20 \
+--threads=1 \
+--method=pearson \
+/home/data/Projects/Zhen/workingMemory/results/CPAC_12_16_13/groupAnalysis/noGSR/CWAS3mmSmallMask

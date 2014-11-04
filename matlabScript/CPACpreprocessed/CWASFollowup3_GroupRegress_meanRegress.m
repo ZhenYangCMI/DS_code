@@ -8,7 +8,7 @@ preprocessDate='12_16_13';
 % Initiate the settings.
 % 1. define Dir
 % for numerical ID
-subList=load('/home/data/Projects/workingMemory/mask/subjectList_Num_68sub.txt');
+subList=load('/home/data/Projects/Zhen/workingMemory/mask/subjectList_Num_68sub.txt');
 % for text ID
 % subListFile=['/home/data/Projects/', project, '/data/final110sub.txt'];
 % subList1=fopen(subListFile);
@@ -21,14 +21,14 @@ model='TotTSep' % fullModel or TotTSep
 if strcmp(model, 'TotTSep')
     effectList={'ageByTotTdemean', 'DS_TotT_demean'};
 else
-    effectList={'DS_FT_demean', 'DS_BT_demean', 'ageByFTdemean', 'ageByBTdemean'};
-    %effectList={'ageByFTdemean'}
+    %effectList={'DS_FT_demean', 'DS_BT_demean', 'ageByFTdemean', 'ageByBTdemean'};
+    effectList={'DS_FT_demean', 'DS_BT_demean'} % no significant cluster for ageByBTdemean
 end
 
 
-mask=['/home/data/Projects/workingMemory/mask/CPAC_12_16_13/compCor/stdMask_68sub_3mm_100percent.nii'];
+mask=['/home/data/Projects/Zhen/workingMemory/mask/CPAC_12_16_13/noGSR/stdMask_68sub_3mm_preSmooth_100percent.nii'];
 
-GroupAnalysis=['/home/data/Projects/workingMemory/results/CPAC_12_16_13/groupAnalysis/compCor/CWAS3mm/followUpFC_meanRegress/groupAnalysis/'];
+GroupAnalysis=['/home/data/Projects/Zhen/workingMemory/results/CPAC_12_16_13/groupAnalysis/noGSR/CWAS3mmSmallMask/followUpFC_meanRegress'];
 outDir=GroupAnalysis;
 % 2. set path
 addpath /home/data/HeadMotion_YCG/YAN_Program/mdmp
@@ -36,6 +36,8 @@ addpath /home/data/HeadMotion_YCG/YAN_Program
 addpath /home/data/HeadMotion_YCG/YAN_Program/TRT
 addpath /home/data/HeadMotion_YCG/YAN_Program/DPARSF_V2.2_130309
 addpath /home/data/HeadMotion_YCG/YAN_Program/spm8
+addpath /home/data/Projects/Zhen/commonCode/y_TFRtoZ.m
+
 [ProgramPath, fileN, extn] = fileparts(which('DPARSFA_run.m'));
 Error=[];
 addpath([ProgramPath,filesep,'Subfunctions']);
@@ -43,12 +45,12 @@ addpath([ProgramPath,filesep,'Subfunctions']);
 SPMversion=str2double(SPMversion(end));
 
 % 3. load covariates
-[NUM,TXT,RAW]=xlsread(['/home/data/Projects/workingMemory/data/regressionModelCPACNewAnalysisAgeDemeanByDSDemean.xls']);
+[NUM,TXT,RAW]=xlsread(['/home/data/Projects/Zhen/workingMemory/data/regressionModelCPACNewAnalysisAgeDemeanByDSDemean.xls']);
 
 for j=1:length(effectList)
     effect=char(effectList{j})
     
-    ROIDef=['/home/data/Projects/workingMemory/results/CPAC_12_16_13/groupAnalysis/compCor/CWAS3mm/', model, 'FWHM8.mdmr/cluster_mask_', effect, '.nii.gz']
+    ROIDef=['/home/data/Projects/Zhen/workingMemory/results/CPAC_12_16_13/groupAnalysis/noGSR/CWAS3mmSmallMask/', model, 'FWHM8.mdmr/cluster_mask_', effect, '.nii.gz']
     [Outdata,VoxDim,Header]=rest_readfile(ROIDef);
     [nDim1 nDim2 nDim3]=size(Outdata);
     ROI1D=reshape(Outdata, [], 1)';
@@ -60,7 +62,7 @@ for j=1:length(effectList)
         
         % 4. group analysis
         
-        FileName = {['/home/data/Projects/workingMemory/results/CPAC_12_16_13/groupAnalysis/compCor/CWAS3mm/followUpFC_meanRegress/', model, '_', effect, '_ROI', num2str(k), '_AllVolume_meanRegress.nii']};
+        FileName = {['/home/data/Projects/Zhen/workingMemory/results/CPAC_12_16_13/groupAnalysis/noGSR/CWAS3mmSmallMask/followUpFC_meanRegress/', model, '_', effect, '_ROI', num2str(k), '_AllVolume_meanRegress.nii']};
         % perform group analysis
         
         if strcmp(model, 'fullModel')

@@ -1,0 +1,50 @@
+
+3dcalc \
+-a /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_DegreeCentrality_Tot_T3_Z_cmb.nii \
+-b /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_ReHo_Tot_T3_Z_cmb.nii \
+-c /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_fALFF_Tot_T3_Z_cmb.nii \
+-d /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_VMHC_Tot_T3_Z_cmb.nii \
+-e /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/CWAS_noGSR/thresh_ageByTotTdemean_2mm.nii.gz \
+-f /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/CWAS_noGSR/thresh_TotTSep_ageByTotTdemean_ROI1_T3_Z_cmb_2mm.nii \
+-expr 'astep(a, 0)+astep(b, 0)+astep(c, 0)+astep(d, 0)+astep(e, 0)+astep(f, 0)-equals((astep(e, 0)+astep(f,0)),2)' \
+-prefix /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/overlap_ageByTot.nii
+
+
+3dcalc \
+-a /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_DegreeCentrality_Full_T4_Z_cmb.nii \
+-b /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_ReHo_Full_T4_Z_cmb.nii \
+-c /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_fALFF_Full_T4_Z_cmb.nii \
+-d /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_VMHC_Full_T4_Z_cmb.nii \
+-expr 'astep(a, 0)+astep(b, 0)+astep(c, 0)+astep(d, 0)' \
+-prefix /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/overlap_ageByDSF.nii
+
+3dcalc \
+-a /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_DegreeCentrality_Tot_T2_Z_cmb.nii \
+-b /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_ReHo_Tot_T2_Z_cmb.nii \
+-c /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_VMHC_Tot_T2_Z_cmb.nii \
+-d /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/CWAS_noGSR/thresh_DS_TotT_demean_2mm.nii.gz \
+-e /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/CWAS_noGSR/thresh_TotTSep_DS_TotT_demean_ROI1_T2_Z_cmb_2mm.nii \
+-expr 'astep(a, 0)+astep(b, 0)+astep(c, 0)+astep(d, 0)+astep(e, 0)' \
+-prefix /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/overlap_ME_Tot.nii
+
+3dcalc \
+-a /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_DegreeCentrality_Full_T2_Z_cmb.nii \
+-b /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_ReHo_Full_T2_Z_cmb.nii \
+-c /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_VMHC_Full_T2_Z_cmb.nii \
+-d /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/CWAS_noGSR/thresh_DS_FT_demean_2mm.nii.gz \
+-e /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/CWAS_noGSR/thresh_fullModel_DS_FT_demean_ROI1_T2_Z_cmb_2mm.nii \
+-expr 'astep(a, 0)+astep(b, 0)+astep(c, 0)+astep(d, 0)+astep(e, 0)' \
+-prefix /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/overlap_ME_FT.nii
+
+3dcalc \
+-a /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_DegreeCentrality_Full_T3_Z_cmb.nii \
+-b /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_ReHo_Full_T3_Z_cmb.nii \
+-c /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_VMHC_Full_T3_Z_cmb.nii \
+-d /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/CWAS_noGSR/thresh_DS_BT_demean_2mm.nii.gz \
+-e /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/CWAS_noGSR/thresh_fullModel_DS_BT_demean_ROI1_T3_Z_cmb_2mm.nii \
+-expr 'astep(a, 0)+astep(b, 0)+astep(c, 0)+astep(d, 0)+astep(e, 0)-equals((astep(d, 0)+astep(e,0)),2)' \
+-prefix /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/overlap_ME_BT.nii
+
+3dcalc -a /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/overlap_ME_BT.nii -expr 'equals(a,1)*(-2)+equals(a,2)*(-1)+equals(a,3)' -prefix /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/overlap_ME_BT_recode.nii
+
+3dcalc -a overlap_ME_BT.nii -expr 'astep(a,1)*a' -prefix overlap_ME_BT_over2.nii

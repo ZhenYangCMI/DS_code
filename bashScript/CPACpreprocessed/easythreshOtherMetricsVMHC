@@ -1,0 +1,62 @@
+# can not have space before or after the = sign
+#remember to modify the effect list depending on the model
+
+preprocessDate=1_1_14
+
+#for covType in meanRegress GSR compCor gCor noGSR; do
+for covType in GSR compCor gCor noGSR; do
+
+for metric in VMHC; do
+
+	if [[ ${covType} = "gCor" ]] || [[ ${covType} = "meanRegress" ]]; then
+		mask=/home/data/Projects/Zhen/workingMemory/mask/CPAC_${preprocessDate}/noGSR/autoMask_68sub_90percent_L.nii
+	else
+		mask=/home/data/Projects/Zhen/workingMemory/mask/CPAC_${preprocessDate}/${covType}/autoMask_68sub_90percent_L.nii
+	fi
+
+mkdir -p /home/data/Projects/Zhen/workingMemory/results/CPAC_${preprocessDate}/groupAnalysis/${covType}/${metric}/easythresh_L
+outputDir=/home/data/Projects/Zhen/workingMemory/results/CPAC_${preprocessDate}/groupAnalysis/${covType}/${metric}/easythresh_L
+
+	#for model in Full DF DB Tot; do
+    for model in Full Tot; do
+
+		if [[ ${model} = "Full" ]]; then
+			effectList='T2 T3 T4 T5'
+		else
+			effectList='T2 T3'
+		fi
+
+		echo ${effectList}
+		for effect in ${effectList}; do
+			3dcalc -a /home/data/Projects/Zhen/workingMemory/results/CPAC_${preprocessDate}/groupAnalysis/${covType}/${metric}/unthresh/${metric}_${model}_${effect}_Z_L.nii \
+			-expr 'a' -prefix "${outputDir}/${metric}_${model}_${effect}_Z_pos.nii"
+
+			3dcalc -a /home/data/Projects/Zhen/workingMemory/results/CPAC_${preprocessDate}/groupAnalysis/${covType}/${metric}/unthresh/${metric}_${model}_${effect}_Z_L.nii \
+			-expr '(-1)*a' -prefix "${outputDir}/${metric}_${model}_${effect}_Z_neg.nii"
+
+			cd ${outputDir}
+
+			for sign in pos neg; do
+			outputFile=${metric}_${model}_${effect}_Z_${sign}
+
+			cmd1="easythresh \
+			${metric}_${model}_${effect}_Z_${sign}.nii \
+			${mask} \
+			2.33 0.05 \
+			${mask} \
+			${outputFile}"
+
+			echo $cmd1
+			eval $cmd1
+		
+			done
+
+		3dcalc -a thresh_${metric}_${model}_${effect}_Z_pos.nii.gz -b thresh_${metric}_${model}_${effect}_Z_neg.nii.gz -expr 'a+b*(-1)' -prefix "thresh_${metric}_${model}_${effect}_Z_cmb.nii"
+
+		done
+	done
+done
+
+done
+	
+

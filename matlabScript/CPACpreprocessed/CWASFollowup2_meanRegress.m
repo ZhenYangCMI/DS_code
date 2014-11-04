@@ -1,11 +1,10 @@
 clear
 clc
 
-preprocessDate='11_16_13';
-project='workingMemory';
-covType='compCor' % covType can be noGSR or compCor
 
-subID=load(['/home/data/Projects/workingMemory/mask/subjectList_Num_68sub.txt']);
+covType='noGSR' % covType can be noGSR or compCor
+
+subID=load(['/home/data/Projects/Zhen/workingMemory/mask/subjectList_Num_68sub.txt']);
 numSub=num2str(length(subID));
 
 model='TotTSep' % fullModel or TotTSep
@@ -13,21 +12,21 @@ if strcmp(model, 'TotTSep')
     effectList={'ageByTotTdemean', 'DS_TotT_demean'};
 else
     %effectList={'DS_FT_demean', 'DS_BT_demean', 'ageByFTdemean', 'ageByBTdemean'};
-    effectList={'ageByFTdemean', 'ageByBTdemean'}
+    effectList={'DS_FT_demean', 'DS_BT_demean'}
 end
 
 
-BrainMaskFile=['/home/data/Projects/workingMemory/mask/CPAC_12_16_13/compCor/stdMask_68sub_3mm_100percent.nii'];
+BrainMaskFile=['/home/data/Projects/Zhen/workingMemory/mask/CPAC_12_16_13/', covType, '/stdMask_68sub_3mm_preSmooth_100percent.nii'];
 
 for j=1:length(effectList)
     effect=char(effectList{j})
-    mkdir /home/data/Projects/workingMemory/results/CPAC_12_16_13/groupAnalysis/compCor/CWAS3mm/followUpFC_meanRegress
-    dataOutDir=['/home/data/Projects/workingMemory/results/CPAC_12_16_13/groupAnalysis/compCor/CWAS3mm/followUpFC_meanRegress/'];
+    mkdir (['/home/data/Projects/Zhen/workingMemory/results/CPAC_12_16_13/groupAnalysis/', covType, '/CWAS3mmSmallMask/followUpFC_meanRegress'])
+    dataOutDir=['/home/data/Projects/Zhen/workingMemory/results/CPAC_12_16_13/groupAnalysis/', covType, '/CWAS3mmSmallMask/followUpFC_meanRegress/'];
     %Test if all the subjects exist
     
     FileNameSet=[];
     
-    ROIDef=['/home/data/Projects/workingMemory/results/CPAC_12_16_13/groupAnalysis/compCor/CWAS3mm/', model, 'FWHM8.mdmr/cluster_mask_', effect, '.nii.gz']
+    ROIDef=['/home/data/Projects/Zhen/workingMemory/results/CPAC_12_16_13/groupAnalysis/', covType, '/CWAS3mmSmallMask/', model, 'FWHM8.mdmr/cluster_mask_', effect, '.nii.gz']
     [Outdata,VoxDim,Header]=rest_readfile(ROIDef);
     [nDim1 nDim2 nDim3]=size(Outdata);
     ROI1D=reshape(Outdata, [], 1)';
@@ -40,11 +39,11 @@ for j=1:length(effectList)
             sub=num2str(subID(i));
             disp(['Working on ', sub])
             
-            if strcmp(effect, 'DS_FT_demean') || strcmp(effect, 'DS_BT_demean')
-                FileName =['/home/data/Projects/workingMemory/results/CPAC_12_16_13/groupAnalysis/compCor/CWAS3mm/', model, 'FWHM8.mdmr/', effect, '_followUp/ROI', num2str(k), 'FC_', effect, '_', sub, '.nii'];
-            else
-                FileName =['/home/data/Projects/workingMemory/results/CPAC_12_16_13/groupAnalysis/compCor/CWAS3mm/', model, 'FWHM8.mdmr/', effect, '_followUp/FC_', effect, '_', sub, '.nii'];
-            end
+            %if strcmp(effect, 'DS_FT_demean') || strcmp(effect, 'DS_BT_demean')
+                %FileName =['/home/data/Projects/Zhen/workingMemory/results/CPAC_12_16_13/groupAnalysis/', covType, '/CWAS3mmSmallMask/', model, 'FWHM8.mdmr/', effect, '_followUp/ROI', num2str(k), 'FC_', effect, '_', sub, '.nii'];
+            %else
+                FileName =['/home/data/Projects/Zhen/workingMemory/results/CPAC_12_16_13/groupAnalysis/', covType, '/CWAS3mmSmallMask/', model, 'FWHM8.mdmr/', effect, '_followUp/FC_', effect, '_', sub, '.nii'];
+            %end
             
             if ~exist(FileName,'file')
                 

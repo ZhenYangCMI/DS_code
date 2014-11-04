@@ -5,13 +5,13 @@ clc
 close all
 
 % define path and variables
-subList=load(['/home/data/Projects/workingMemory/mask/subjectList_Num_68sub.txt']);
+subList=load(['/home/data/Projects/Zhen/workingMemory/mask/subjectList_Num_68sub.txt']);
 numSub=length(subList)
 metric='ReHo' %'DegreeCentrality','VMHC', 'fALFF', 'ReHo'
-resultDir=['/home/data/Projects/workingMemory/results/CPAC_1_1_14/groupAnalysis/meanRegress/', metric, '/'];
+resultDir=['/home/data/Projects/Zhen/workingMemory/results/CPAC_1_1_14/groupAnalysis/meanRegress/', metric, '/'];
 
-figDir=['/home/data/Projects/workingMemory/figs/paper_figs/Interaction/'];
-[NUM,TXT,RAW]=xlsread(['/home/data/Projects/workingMemory/data/regressionModelCPACNewAnalysisAgeDemeanByDSDemean.xls']);
+figDir=['/home/data/Projects/Zhen/workingMemory/figs/paper_figs/INT_test/'];
+[NUM,TXT,RAW]=xlsread(['/home/data/Projects/Zhen/workingMemory/data/regressionModelCPACNewAnalysisAgeDemeanByDSDemean.xls']);
 
 %if task=DB, T=T5 B=b5; if task=DF T=T4 B=b4; if task Tot T=T3 B=b3
 taskList={'DF', 'DB', 'Tot'}; % DF, DB, Tot
@@ -114,16 +114,20 @@ for k=1:length(taskList)
                 pcolor(x1, x2, yfit); shading flat, shading interp;
                 hold on
                 scatter(age, DF, 'b')
+                set(gca, 'xTick', -6:2:4)
             elseif strcmp(task, 'DB')
                 yfit=betaMatrix(:,:,1,i).*x11+betaMatrix(:,:,3,i).*x33+betaMatrix(:,:,5,i).*ageByDB(:,:,i);
                 pcolor(x1, x3, yfit); shading flat, shading interp;
                 hold on
                 scatter(age, DB, 'b')
+                set(gca, 'xTick', -6:2:4)
             elseif strcmp(task, 'Tot')
                 yfit=betaMatrix(:,:,1,i).*x11+betaMatrix(:,:,2,i).*x44+betaMatrix(:,:,3,i).*ageByTot(:,:,i);
                 pcolor(x1, x4, yfit); shading flat, shading interp;
+                
                 hold on
                 scatter(age, Tot, 'b')
+                set(gca, 'xTick', -6:2:4)
             end
             %             xlabel('Demeaned Age')
             %             ylabel(['Demeaned Digit Span Score'])

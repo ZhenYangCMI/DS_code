@@ -1,0 +1,8 @@
+3dcalc \
+-a /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_DegreeCentrality_Full_T3_Z_cmb.nii \
+-b /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_ReHo_Full_T3_Z_cmb.nii \
+-c /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/thresh_VMHC_Full_T3_Z_cmb.nii \
+-d /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/CWAS_noGSR/thresh_DS_BT_demean_2mm.nii.gz \
+-e /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/CWAS_noGSR/thresh_fullModel_DS_BT_demean_ROI1_T3_Z_cmb_2mm.nii \
+-expr 'astep(a, 0)+astep(b, 0)+astep(c, 0)+astep(d, 0)+astep(e, 0)-equals((astep(d, 0)+astep(e,0)),2)' \
+-prefix /home/data/Projects/Zhen/workingMemory/figs/paper_figs/surfaceMap/overlap_ME_BT.nii

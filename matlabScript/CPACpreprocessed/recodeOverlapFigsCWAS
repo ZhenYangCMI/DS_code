@@ -1,0 +1,29 @@
+# DC largest number of overlap is 4; 
+
+# put all strategy results on one image
+measure=CWAS
+
+3dcalc \
+-a /home/data/Projects/Zhen/workingMemory/figs/paper_figs/compStrategies/compCor/CWAS/thresh_ageByFTdemean.nii.gz \
+-b /home/data/Projects/Zhen/workingMemory/figs/paper_figs/compStrategies/GSR/CWAS/thresh_ageByFTdemean.nii.gz \
+-c /home/data/Projects/Zhen/workingMemory/figs/paper_figs/compStrategies/gCor/CWAS/thresh_ageByFTdemean.nii.gz \
+-d /home/data/Projects/Zhen/workingMemory/figs/paper_figs/compStrategies/noGSR/CWAS/thresh_ageByFTdemean.nii.gz \
+-expr "step(a)+step(b)+step(c)+step(d)" \
+-prefix /home/data/Projects/Zhen/workingMemory/figs/paper_figs/compStrategies/strategyOverlap/${measure}_overlap_strategies.nii
+
+# recode the image and plot on the surfacemap
+
+3dcalc \
+-a /home/data/Projects/Zhen/workingMemory/figs/paper_figs/compStrategies/strategyOverlap/${measure}_overlap_strategies.nii \
+-expre 'equals(a,1)*(-2)+equals(a,2)*(-1)+equals(a,3)*(1)+equals(a,4)*(2)' \
+-prefix /home/data/Projects/Zhen/workingMemory/figs/paper_figs/compStrategies/strategyOverlap/surfacemap/${measure}_overlap_strategies_recode.nii
+
+
+# split image by number of overlap strategies
+
+#for strategy in 1 2 3 4 ; do
+#3dcalc \
+#-a /home/data/Projects/Zhen/workingMemory/figs/paper_figs/compStrategies/strategyOverlap/${measure}_overlap_strategies.nii \
+#-expr "equals(a,${strategy})" \
+#-prefix /home/data/Projects/Zhen/workingMemory/figs/paper_figs/compStrategies/strategyOverlap/${measure}_overlap_${strategy}strategies.nii
+#done

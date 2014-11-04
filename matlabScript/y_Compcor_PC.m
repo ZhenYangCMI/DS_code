@@ -1,8 +1,8 @@
 function [PCs] = y_Compcor_PC(ADataDir,Nuisance_MaskFilename, OutputName, PCNum, IsNeedDetrend, Band, TR)
 % FORMAT [PCs] = y_Compcor_PC(ADataDir,Nuisance_MaskFilename, OutputName, PCNum, IsNeedDetrend, Band, TR)
 % Input:
-%   ADataDir    -  The data direcotry
-%   Nuisance_MaskFilename   -  The Mask file for nuisance area, e.g., the combined mask of WM and CSF
+%   ADataDir    -  The data direcotry in native space
+%   Nuisance_MaskFilename   -  The Mask file for nuisance area, e.g., the combined mask of WM and CSF in native space (MNI space register back to native space)
 %	OutputName  	-	Output filename
 %   PCNum - The number of PCs to be output
 %   IsNeedDetrend   -   0: Dot not detrend; 1: Use Matlab's detrend

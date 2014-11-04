@@ -17,3 +17,4 @@ Nuisance_MaskFilename=['/home/data/Projects/workingMemory/data/DPARSF_analysis/n
 OutputName=['/home/data/Projects/workingMemory/data/DPARSF_analysis/compCorPC/', sub, '_', num2str(PCNum), 'componets.txt'];
 [PCs] = y_Compcor_PC(ADataDir,Nuisance_MaskFilename, OutputName, PCNum, IsNeedDetrend, Band, TR);
 end
+

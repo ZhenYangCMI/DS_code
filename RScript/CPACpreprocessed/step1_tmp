@@ -1,0 +1,13 @@
+covType=$1
+connectir_mdmr.R \
+-i "/home/data/Projects/Zhen/workingMemory/results/CPAC_12_16_13/groupAnalysis/${covType}/CWAS3mmSmallMask" \
+--formula 'age_demean + DS_FT_demean + DS_BT_demean + ageByFTdemean + ageByBTdemean + meanFDJenk_demean + WASI_Full4IQ_demean + hand_demean + gCor_CPAC_3mm_demean' \
+--model "/home2/data/Projects/Zhen/workingMemory/data/regressionModelCPACNewAnalysisAgeDemeanByDSDemean.csv" \
+--permutations 15000 \
+--factors2perm 'age_demean,DS_FT_demean,DS_BT_demean,ageByFTdemean,ageByBTdemean' \
+--forks=20 \
+--threads 1 \
+--memlimit 12 \
+--save-perms \
+fullModelFWHM8gCor.mdmr
+
